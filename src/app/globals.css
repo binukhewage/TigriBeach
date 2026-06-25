@@ -2,25 +2,232 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
+  --primary: #ea580c;
+  --primary-hover: #c2410c;
+  --accent: #d97706;
+  --muted: #475569;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(15, 23, 42, 0.08);
+  
+  --font-geist-sans: "Outfit", sans-serif;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Outfit", sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --animate-marquee: marquee 45s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Scrollbar for Light Theme */
+::-webkit-scrollbar {
+  width: 8px;
 }
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth HTML behaviors */
+html {
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Styles (Light Mode) */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.glassmorphism-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.95) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glassmorphism-card:hover {
+  border-color: rgba(234, 88, 12, 0.25);
+  box-shadow: 0 12px 35px -10px rgba(234, 88, 12, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Glow Text & Elements (Adapted for Light Background) */
+.glow-text-amber {
+  text-shadow: 0 0 12px rgba(217, 119, 6, 0.15);
+}
+
+.glow-btn-primary {
+  box-shadow: 0 4px 14px 0 rgba(234, 88, 12, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-btn-primary:hover {
+  box-shadow: 0 4px 20px 0 rgba(234, 88, 12, 0.45);
+  transform: scale(1.02);
+}
+
+/* Scroll-Driven Entrance Animations (CSS native) */
+@media (prefers-reduced-motion: no-preference) {
+  @supports ((animation-timeline: view()) and (animation-range: entry)) {
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(60px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleReveal {
+      from {
+        opacity: 0;
+        transform: scale(0.94) translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    @keyframes slideLeftReveal {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideRightReveal {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .animate-scroll-fade {
+      view-timeline: --reveal block;
+      animation: fadeInUp auto linear both;
+      animation-timeline: --reveal;
+      animation-range: entry 10% entry 40%;
+    }
+
+    .animate-scroll-scale {
+      view-timeline: --scale block;
+      animation: scaleReveal auto linear both;
+      animation-timeline: --scale;
+      animation-range: entry 5% entry 35%;
+    }
+
+    .animate-scroll-left {
+      view-timeline: --slideleft block;
+      animation: slideLeftReveal auto linear both;
+      animation-timeline: --slideleft;
+      animation-range: entry 10% entry 38%;
+    }
+
+    .animate-scroll-right {
+      view-timeline: --slideright block;
+      animation: slideRightReveal auto linear both;
+      animation-timeline: --slideright;
+      animation-range: entry 10% entry 38%;
+    }
+  }
+}
+
+/* Base custom utility animations for fallback */
+.transition-reveal {
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom animations for Hero entry effects */
+@keyframes zoom {
+  from {
+    transform: scale(1.03);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes heroFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Infinite Marquee for dynamic reviews scrolling in line */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+

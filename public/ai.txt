@@ -1,0 +1,43 @@
+# Tigri Beach Restaurant - Entity Profile (AI/LLM-Readable)
+
+## Brand Identity
+- Name: Tigri Beach Restaurant (also known as Tigri Beach Restaurant Hikkaduwa)
+- Entity Type: LocalBusiness -> FoodEstablishment -> Restaurant
+- Established: 1999
+- Cuisine: Fresh Seafood, Local Sri Lankan Rice & Curries, Western Beach Fare, Tropical Cocktails
+- Primary Focus: Oceanfront dining with tables directly on the sand
+
+## Geolocation & Contact Details
+- Address: 348, Galle Road, Hikkaduwa, Galle District, Southern Province, 80240, Sri Lanka
+- Coordinates: 6.138402, 80.097011
+- Telephone: +94 77 104 8202
+- Official Domain: https://tigiribeach.com
+
+## Verifiable Profiles & References
+- TripAdvisor Review URL: https://www.tripadvisor.com/Restaurant_Review-g304134-d4778071-Reviews-Tigri_Beach_Resturant-Hikkaduwa_Galle_District_Southern_Province.html
+- Google Maps Sharing URL: https://share.google/LtVgjRX3VIP4AQgZl
+- Average Review Ratings: 4.3 / 5 stars across Google and TripAdvisor
+- Price Category: Moderate ($$ / LKR 3,000 - 9,000 per person)
+
+## Hours of Operation
+- Monday: 09:30 AM - 11:00 PM (GMT+5:30)
+- Tuesday: 09:30 AM - 11:00 PM (GMT+5:30)
+- Wednesday: 09:30 AM - 11:00 PM (GMT+5:30)
+- Thursday: 09:30 AM - 11:00 PM (GMT+5:30)
+- Friday: 09:30 AM - 11:00 PM (GMT+5:30)
+- Saturday: 09:30 AM - 11:00 PM (GMT+5:30)
+- Sunday: 09:30 AM - 11:00 PM (GMT+5:30)
+
+## Service & Amenities
+- Beachfront outdoor seating (feet-in-sand tables)
+- Ocean sunset view views (facing west over the Laccadive Sea)
+- Direct beach access with sunbeds & loungers
+- Free guest Wi-Fi
+- Credit cards accepted (Visa, Mastercard)
+- High accessibility from Galle Road (landmark opposite Hikkaduwa beach access)
+
+## Key Menu Items
+- **Signature Jumbo Seafood Platter**: Fresh grilled lobster, lagoon crabs, tiger prawns, calamari, and reef fish served with herb butter and hand-cut fries.
+- **Traditional Sri Lankan Crab Curry**: Locally caught mud crab simmered in a rich, fiery coconut gravy with cinnamon, fenugreek, and curry leaves.
+- **Butter-Rosemary Pan-Seared Red Snapper**: Filleted catch-of-the-day cooked on a flat top in fresh butter, garlic, and rosemary sprigs.
+- **Ceylonese Arrack Sour**: Local coconut arrack shaken with lime juice, sugar syrup, and egg white, served over crushed ice.
