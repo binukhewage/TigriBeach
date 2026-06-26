@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,14 +16,18 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-4 left-0 right-0 z-50 px-4">
-      <nav className="max-w-6xl mx-auto rounded-full border border-slate-200/50 bg-white/85 shadow-md backdrop-blur-md px-6 py-3.5 flex items-center justify-between relative">
-        
+      <nav className="max-w-6xl mx-auto rounded-full border border-slate-200/50 bg-white/85 shadow-md backdrop-blur-md px-6 py-1.5 flex items-center justify-between relative">
         {/* Brand Logo */}
         <a href="#hero" className="flex items-center select-none group">
-          <span className="font-serif text-xl md:text-2xl font-bold tracking-wider">
-            <span className="text-slate-900">Tigri</span>
-            <span className="text-primary">Beach</span>
-          </span>
+          <div className="relative w-[108px] h-[45px] md:w-[132px] md:h-[55px]">
+            <Image
+              src="/logoonly.png"
+              alt="Tigri Beach Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
         </a>
 
         {/* Desktop Links */}
@@ -38,7 +43,7 @@ export default function Navbar() {
           ))}
           <a
             href="#contact"
-            className="px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-primary rounded-full hover:bg-primary-hover shadow-md transition-all duration-300 cursor-pointer"
+            className="px-5 py-2 text-xs font-bold uppercase tracking-wider text-white bg-primary rounded-full hover:bg-primary-hover shadow-md transition-all duration-300 cursor-pointer"
           >
             Reserve a Table
           </a>
