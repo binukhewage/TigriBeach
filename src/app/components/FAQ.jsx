@@ -45,24 +45,6 @@ export default function FAQ() {
       id="faq"
       className="relative py-24 md:py-32 bg-white border-t border-slate-100 overflow-hidden"
     >
-      {/* Dynamic FAQPage JSON-LD Schema for AI and Search Crawlers */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map((faq) => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer,
-              },
-            })),
-          }),
-        }}
-      />
 
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/[0.02] rounded-full blur-[140px] pointer-events-none" />
 
