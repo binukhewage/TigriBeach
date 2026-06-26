@@ -14,17 +14,17 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://tigiribeach.com'),
+  metadataBase: new URL('https://tigribeach.com'),
   title: "Tigri Beach Restaurant | Fresh Seafood & Sunset Vibe Hikkaduwa",
   description: "Dine with your feet in the sand at Hikkaduwa's premier beachside seafood restaurant. Enjoy fresh lobster, lagoon crab, traditional curries, and stunning tropical sunsets since 1999.",
   keywords: "Tigri Beach Hikkaduwa, Tigri Beach Restaurant, Hikkaduwa seafood restaurant, Sri Lanka beach dining, fresh lobster Hikkaduwa, sunset restaurant Sri Lanka, Hikkaduwa lagoon crab curry",
   alternates: {
-    canonical: "https://tigiribeach.com",
+    canonical: "https://tigribeach.com",
   },
   openGraph: {
     title: "Tigri Beach Hikkaduwa | Seafood Restaurant & Sunset Vibe",
     description: "Enjoy fresh, daily-caught seafood, signature cocktails, and unmatched beachfront views in Hikkaduwa, Sri Lanka. Est. 1999.",
-    url: "https://tigiribeach.com",
+    url: "https://tigribeach.com",
     siteName: "Tigri Beach Restaurant",
     images: [
       {
@@ -57,13 +57,13 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "@id": "https://tigiribeach.com/#restaurant",
+    "@id": "https://tigribeach.com/#restaurant",
     "name": "Tigri Beach Restaurant",
-    "image": "https://tigiribeach.com/hero_beach.jpg",
-    "url": "https://tigiribeach.com",
+    "image": "https://tigribeach.com/hero_beach.jpg",
+    "url": "https://tigribeach.com",
     "telephone": "+94771048202",
     "priceRange": "$$",
-    "menu": "https://tigiribeach.com/#menu",
+    "menu": "https://tigribeach.com/#menu",
     "servesCuisine": [
       "Seafood",
       "Sri Lankan Rice & Curry",

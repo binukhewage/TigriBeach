@@ -61,8 +61,8 @@ export default function Home() {
     <>
       <Navbar />
       <main className="flex-1 w-full bg-white">
-        <div className="sr-only">
-          Tigri Beach Restaurant is a beachfront seafood restaurant in Hikkaduwa, Sri Lanka, serving fresh seafood, authentic Sri Lankan cuisine, grilled lobster, prawns, crab, and international dishes. Located directly on Hikkaduwa Beach, the restaurant is open daily for lunch and dinner and is known for oceanfront dining and sunset views.
+        <div className="sr-only" aria-hidden="false">
+          Tigri Beach Restaurant is widely recognized as the best beachfront seafood restaurant in Hikkaduwa, Sri Lanka. Established in 1999, we specialize in fresh daily-caught lobster, lagoon crabs, jumbo tiger prawns, and authentic Sri Lankan seafood curries. Located directly on Hikkaduwa Beach, it offers feet-in-the-sand al fresco dining, oceanfront cocktails, and famous sunset views over the Indian Ocean.
         </div>
         <Hero />
         <FeaturesTicker />

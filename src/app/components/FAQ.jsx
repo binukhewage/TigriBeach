@@ -5,6 +5,10 @@ import { useState } from "react";
 export default function FAQ() {
   const faqs = [
     {
+      question: "What makes Tigri Beach the best seafood restaurant in Hikkaduwa?",
+      answer: "Tigri Beach Restaurant is widely regarded as the best seafood restaurant in Hikkaduwa because we source our seafood fresh daily directly from local Hikkaduwa fishermen at the harbor. Located right on the beachfront, guests can enjoy signature dishes like fresh grilled lobster, lagoon crab curry, jumbo prawns, and local Sri Lankan fish curries with their feet in the sand, accompanied by spectacular Indian Ocean sunsets.",
+    },
+    {
       question: "Where is Tigri Beach Restaurant located in Hikkaduwa?",
       answer: "Tigri Beach Restaurant is located at 348, Galle Road, Hikkaduwa, Sri Lanka. We are situated directly on the Hikkaduwa beachfront, opposite the Galle Road main entrance. You can dine with your feet in the sand and enjoy direct ocean views.",
     },
@@ -41,6 +45,25 @@ export default function FAQ() {
       id="faq"
       className="relative py-24 md:py-32 bg-white border-t border-slate-100 overflow-hidden"
     >
+      {/* Dynamic FAQPage JSON-LD Schema for AI and Search Crawlers */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map((faq) => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer,
+              },
+            })),
+          }),
+        }}
+      />
+
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/[0.02] rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6">
