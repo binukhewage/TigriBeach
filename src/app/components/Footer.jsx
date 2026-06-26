@@ -31,26 +31,58 @@ export default function Footer() {
             Dine on the sand, watch the sunset, and experience local Ceylonese
             hospitality.
           </p>
-          {/* Social Badges (Light Mode) */}
-          <div className="flex gap-4 mt-4">
+          {/* Social Badges (Light Mode with Brand Colors) */}
+          <div className="flex gap-3.5 mt-4">
+            {/* Instagram Link */}
+            <a
+              href="https://www.instagram.com/tigri.beach/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full bg-[#E1306C]/10 text-[#E1306C] border border-[#E1306C]/20 hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white hover:border-transparent flex items-center justify-center transition-all duration-300 shadow-sm hover:scale-105"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+              </svg>
+            </a>
+            
+            {/* Facebook Link */}
+            <a
+              href="https://www.facebook.com/TigriTours/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full bg-[#1877F2]/10 text-[#1877F2] border border-[#1877F2]/20 hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] flex items-center justify-center transition-all duration-300 shadow-sm hover:scale-105"
+              aria-label="Facebook"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+
+            {/* TripAdvisor Link */}
             <a
               href="https://www.tripadvisor.com/Restaurant_Review-g304134-d4778071-Reviews-Tigri_Beach_Resturant-Hikkaduwa_Galle_District_Southern_Province.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-white hover:bg-slate-100 border border-slate-200 text-slate-500 hover:text-[#00b087] hover:border-[#00b087]/30 flex items-center justify-center text-xs font-bold transition-all duration-300 shadow-sm"
+              className="w-10 h-10 rounded-full bg-[#00aa6c]/10 text-[#00aa6c] border border-[#00aa6c]/20 hover:bg-[#00aa6c] hover:text-white hover:border-[#00aa6c] flex items-center justify-center transition-all duration-300 shadow-sm hover:scale-105"
               aria-label="TripAdvisor"
             >
-              TA
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/>
+              </svg>
             </a>
-            {/* Opens Driving directions */}
+
+            {/* Google Maps Directions Link */}
             <a
               href="https://www.google.com/maps/dir/?api=1&destination=Tigri+Beach+Restaurant+Hikkaduwa"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-white hover:bg-slate-100 border border-slate-200 text-slate-500 hover:text-[#ea4335] hover:border-[#ea4335]/30 flex items-center justify-center text-xs font-bold transition-all duration-300 shadow-sm"
+              className="w-10 h-10 rounded-full bg-[#ea4335]/10 text-[#ea4335] border border-[#ea4335]/20 hover:bg-[#ea4335] hover:text-white hover:border-[#ea4335] flex items-center justify-center transition-all duration-300 shadow-sm hover:scale-105"
               aria-label="Google Maps Directions"
             >
-              GM
+              <svg className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+              </svg>
             </a>
           </div>
         </div>
