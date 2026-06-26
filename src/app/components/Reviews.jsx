@@ -369,9 +369,9 @@ function ReviewCard({ rev }) {
               </div>
             )}
             <div className="flex flex-col">
-              <h4 className="text-xs font-bold text-slate-800 tracking-wide">
+              <h3 className="text-xs font-bold text-slate-800 tracking-wide">
                 {rev.author}
-              </h4>
+              </h3>
               <span className="text-[9px] font-semibold text-slate-400 mt-0.5 uppercase tracking-wider">
                 {rev.source}
               </span>

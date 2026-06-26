@@ -15,14 +15,15 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="fixed top-4 left-0 right-0 z-50 px-4">
+    <header className="fixed top-4 left-0 right-0 z-50 px-4">
       <nav className="max-w-6xl mx-auto rounded-full border border-slate-200/50 bg-white/85 shadow-md backdrop-blur-md px-6 py-1.5 flex items-center justify-between relative">
         {/* Brand Logo */}
         <a href="#hero" className="flex items-center select-none group">
           <div className="relative w-[108px] h-[45px] md:w-[132px] md:h-[55px]">
             <Image
               src="/logoonly.png"
-              alt="Tigri Beach Logo"
+              alt="Tigri Beach Restaurant logo - Hikkaduwa beachfront dining"
+              title="Tigri Beach Restaurant Logo"
               fill
               className="object-contain"
               priority
@@ -103,6 +104,6 @@ export default function Navbar() {
           </a>
         </div>
       )}
-    </div>
+    </header>
   );
 }

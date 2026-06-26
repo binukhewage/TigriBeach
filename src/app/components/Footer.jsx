@@ -16,10 +16,10 @@ export default function Footer() {
             <div className="relative w-[168px] h-[70px] md:w-[192px] md:h-[80px]">
               <Image
                 src="/logoonly.png"
-                alt="Tigri Beach Logo"
+                alt="Tigri Beach Restaurant logo - Hikkaduwa beachfront dining"
+                title="Tigri Beach Restaurant Logo"
                 fill
                 className="object-contain object-left"
-                priority
               />
             </div>
             <span className="text-[10px] tracking-[0.3em] text-slate-500 uppercase mt-2">
@@ -89,9 +89,9 @@ export default function Footer() {
 
         {/* Quick Links Column */}
         <div className="col-span-1 md:col-span-2 flex flex-col gap-4 animate-scroll-fade">
-          <h4 className="text-xs font-bold uppercase tracking-[0.25em] text-slate-900">
+          <h2 className="text-xs font-bold uppercase tracking-[0.25em] text-slate-900">
             Quick Links
-          </h4>
+          </h2>
           <div className="flex flex-col gap-2.5 text-sm text-slate-600 font-light">
             <a href="#about" className="hover:text-primary transition-colors duration-200">About Us</a>
             <a href="#menu" className="hover:text-primary transition-colors duration-200">Our Menu</a>
@@ -103,9 +103,9 @@ export default function Footer() {
 
         {/* Contact Info Column (Light Mode) */}
         <div className="col-span-1 md:col-span-3 flex flex-col gap-6 animate-scroll-fade">
-          <h4 className="text-xs font-bold uppercase tracking-[0.25em] text-slate-900">
+          <h2 className="text-xs font-bold uppercase tracking-[0.25em] text-slate-900">
             Find Us
-          </h4>
+          </h2>
           <div className="flex flex-col gap-4 text-xs md:text-sm font-light text-slate-600">
             <div className="flex items-start gap-3">
               <svg
@@ -188,9 +188,9 @@ export default function Footer() {
 
         {/* Map Shortcut Column (Light Mode) */}
         <div className="col-span-1 md:col-span-3 flex flex-col gap-4 animate-scroll-right">
-          <h4 className="text-xs font-bold uppercase tracking-[0.25em] text-slate-900">
+          <h2 className="text-xs font-bold uppercase tracking-[0.25em] text-slate-900">
             Location Directions
-          </h4>
+          </h2>
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=Tigri+Beach+Restaurant+Hikkaduwa"
             target="_blank"

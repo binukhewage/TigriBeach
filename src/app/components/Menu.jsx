@@ -21,6 +21,11 @@ export default function Menu() {
         priceLkr: "LKR 14,500",
         priceUsd: "~$48.00",
         tags: ["Popular", "Sourced Today", "Serves 2"],
+        ingredients: "Fresh Rock Lobster, Lagoon Crab, Tiger Prawns, Calamari, Snapper, Garlic, Lemon Butter, Herbs",
+        cuisine: "Sri Lankan Seafood / Western Grill",
+        category: "Signatures",
+        whyPopular: "Featuring a daily selection of harbor-fresh catches grilled over coconut charcoal to smoky perfection.",
+        imageAlt: "Colossal grilled seafood platter with lobster, crab, prawns and calamari",
       },
       {
         name: "Jumbo Garlic Butter Tiger Prawns",
@@ -28,6 +33,11 @@ export default function Menu() {
         priceLkr: "LKR 6,200",
         priceUsd: "~$20.50",
         tags: ["Chef Special"],
+        ingredients: "Jumbo Tiger Prawns, Clarified Butter, Roasted Garlic, Fresh Parsley, Lemon Juice",
+        cuisine: "Sri Lankan / Western Fusion",
+        category: "Signatures",
+        whyPopular: "Highly requested for the massive size of the local prawns and the rich, garlic-infused butter sauce.",
+        imageAlt: "Grilled jumbo tiger prawns served with garlic butter sauce and lemon slices",
       },
       {
         name: "Butter-Rosemary Grilled Snapper",
@@ -35,6 +45,11 @@ export default function Menu() {
         priceLkr: "LKR 5,800",
         priceUsd: "~$19.20",
         tags: ["Fresh Catch"],
+        ingredients: "Whole Red Snapper, Fresh Rosemary, Garlic Cloves, Olive Oil, Lemon Juice, Sea Salt",
+        cuisine: "Mediterranean Seafood Grill",
+        category: "Signatures",
+        whyPopular: "A classic beachfront dish showcasing the fresh, clean flavors of daily-caught white reef fish.",
+        imageAlt: "Whole grilled red snapper fish garnished with rosemary sprigs and lemon",
       },
     ],
     seafood: [
@@ -44,6 +59,11 @@ export default function Menu() {
         priceLkr: "LKR 3,900",
         priceUsd: "~$13.00",
         tags: ["Spicy"],
+        ingredients: "Ocean Calamari, Red Chili Paste, Bell Peppers, Red Onions, Garlic, Ginger, Soy Sauce, Green Chili",
+        cuisine: "Sri Lankan Deviled",
+        category: "Fresh Catch",
+        whyPopular: "A local favorite featuring a perfect balance of spicy, sweet, and tangy flavors that pair well with cold beer.",
+        imageAlt: "Spicy Sri Lankan deviled calamari rings with peppers and onions in a red sauce",
       },
       {
         name: "Charcoal Grilled Lobster",
@@ -51,6 +71,11 @@ export default function Menu() {
         priceLkr: "By Weight / 100g",
         priceUsd: "Market Price",
         tags: ["Premium", "Live Catch"],
+        ingredients: "Live Rock Lobster, Olive Oil, Fresh Lemon Juice, Sea Salt, Cracked Black Pepper, Garlic Butter",
+        cuisine: "Fresh Seafood Grill",
+        category: "Fresh Catch",
+        whyPopular: "Guests hand-select their lobster from our daily display to be custom-grilled on the beach.",
+        imageAlt: "Fresh whole lobster charcoal-grilled on the beach and served with lemon",
       },
       {
         name: "Crispy Fried Reef Fish Fillet",
@@ -58,6 +83,11 @@ export default function Menu() {
         priceLkr: "LKR 3,600",
         priceUsd: "~$12.00",
         tags: [],
+        ingredients: "White Reef Fish Fillet, Spiced Flour Batter, Tartar Sauce (Mayonnaise, Dill, Capers, Lemon)",
+        cuisine: "International Seafood",
+        category: "Fresh Catch",
+        whyPopular: "Crispy, golden batter locking in the delicate juices of the fresh daily-caught reef fish.",
+        imageAlt: "Crispy golden fried fish fillets served with tartar sauce",
       },
     ],
     curries: [
@@ -67,6 +97,11 @@ export default function Menu() {
         priceLkr: "LKR 7,500",
         priceUsd: "~$24.80",
         tags: ["Authentic", "Highly Recommended"],
+        ingredients: "Lagoon Mud Crab, Roasted Curry Powder, Coconut Milk, Lemongrass, Curry Leaves, Fenugreek, Pandan Leaves",
+        cuisine: "Authentic Sri Lankan",
+        category: "Ceylonese Curries",
+        whyPopular: "Our signature local specialty, showcasing the rich spices and fresh seafood heritage of Hikkaduwa.",
+        imageAlt: "Spicy traditional Sri Lankan mud crab curry in a clay pot served with rice",
       },
       {
         name: "Traditional Fish Ambul Thiyal",
@@ -74,6 +109,11 @@ export default function Menu() {
         priceLkr: "LKR 4,200",
         priceUsd: "~$14.00",
         tags: ["Sour & Spicy"],
+        ingredients: "Cubed Yellowfin Tuna, Black Goraka Paste, Ground Black Pepper, Cardamom, Cloves, Curry Leaves",
+        cuisine: "Southern Sri Lankan",
+        category: "Ceylonese Curries",
+        whyPopular: "An ancient southern method of preserving fish, delivering a unique, tangy, and deeply peppery flavor profile.",
+        imageAlt: "Traditional dark and dry tuna fish curry Ambul Thiyal in a clay dish",
       },
       {
         name: "Red Prawn Coconut Curry",
@@ -81,6 +121,11 @@ export default function Menu() {
         priceLkr: "LKR 4,900",
         priceUsd: "~$16.20",
         tags: ["Mild"],
+        ingredients: "Tiger Prawns, Coconut Milk, Turmeric, Fenugreek, Onion, Garlic, Green Chilies, Pandan Leaves",
+        cuisine: "Sri Lankan Coconut Curry",
+        category: "Ceylonese Curries",
+        whyPopular: "A mild, creamy curry with aromatic spices that highlight the sweetness of fresh ocean prawns.",
+        imageAlt: "Mild and creamy yellow prawn coconut curry with fresh herbs",
       },
     ],
     drinks: [
@@ -90,6 +135,11 @@ export default function Menu() {
         priceLkr: "LKR 1,800",
         priceUsd: "~$6.00",
         tags: ["Signature Cocktail"],
+        ingredients: "Coconut Arrack, Fresh Lime Juice, Cane Sugar Syrup, Egg White, Ice, Orange Slices",
+        cuisine: "Sri Lankan Cocktail",
+        category: "Sunset Cocktails",
+        whyPopular: "A classic Sri Lankan beach cocktail utilizing the unique sweet flavor of distilled coconut nectar.",
+        imageAlt: "Ceylonese Arrack Sour cocktail in a glass garnished with an orange wheel",
       },
       {
         name: "Hikkaduwa Sunset Mojito",
@@ -97,6 +147,11 @@ export default function Menu() {
         priceLkr: "LKR 1,600",
         priceUsd: "~$5.30",
         tags: ["Refreshing"],
+        ingredients: "White Rum, Fresh Mint Leaves, Lime Chunks, Wild Bee Honey, Club Soda, Crushed Ice",
+        cuisine: "Tropical Cocktail",
+        category: "Sunset Cocktails",
+        whyPopular: "Light, sweet, and minty, making it the perfect refreshing companion as the sun goes down.",
+        imageAlt: "Refreshing tropical mojito cocktail with mint leaves and lime chunks",
       },
       {
         name: "Tambili (King Coconut) Rum Punch",
@@ -104,6 +159,11 @@ export default function Menu() {
         priceLkr: "LKR 2,100",
         priceUsd: "~$7.00",
         tags: ["Must Try"],
+        ingredients: "King Coconut Water, White Rum, Triple Sec, Lime Juice, Cherry, served inside the Tambili Shell",
+        cuisine: "Tigri Signature Drink",
+        category: "Sunset Cocktails",
+        whyPopular: "Served inside a freshly cut local orange king coconut, offering a true tropical island aesthetic.",
+        imageAlt: "Signature Rum Punch cocktail served inside a fresh orange king coconut shell",
       },
     ],
   };
@@ -158,7 +218,7 @@ export default function Menu() {
               >
                 {/* Name & Price */}
                 <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-                  <h3 className="text-lg md:text-xl font-serif font-bold text-slate-900 hover:text-primary transition-colors duration-200">
+                  <h3 className="text-lg md:text-xl font-serif font-bold text-slate-900 hover:text-primary transition-colors duration-205">
                     {item.name}
                   </h3>
                   <div className="flex flex-col items-start sm:items-end">
@@ -200,6 +260,7 @@ export default function Menu() {
                 <Image
                   src="/seafood_platter.jpg"
                   alt="Tigri Seafood Platter signature dish"
+                  title="Tigri Beach Signature Seafood Platter"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover"
@@ -211,7 +272,7 @@ export default function Menu() {
                 </div>
               </div>
               <div className="px-2 py-4 flex flex-col gap-2">
-                <h4 className="font-serif text-xl font-bold text-slate-900">The Seafood Platter Experience</h4>
+                <h3 className="font-serif text-xl font-bold text-slate-900">The Seafood Platter Experience</h3>
                 <p className="text-xs text-slate-500 font-light leading-relaxed">
                   Our signature platter showcases the finest bounty that the Laccadive Sea provides. Prepared fresh over natural coconut charcoal grills and spiced with local herbs.
                 </p>

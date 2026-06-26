@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import AiSummary from "./components/AiSummary";
 import FeaturesTicker from "./components/FeaturesTicker";
 import About from "./components/About";
 import Menu from "./components/Menu";
@@ -60,11 +61,9 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex-1 w-full bg-white">
-        <div className="sr-only" aria-hidden="false">
-          Tigri Beach Restaurant is widely recognized as the best beachfront seafood restaurant in Hikkaduwa, Sri Lanka. Established in 1999, we specialize in fresh daily-caught lobster, lagoon crabs, jumbo tiger prawns, and authentic Sri Lankan seafood curries. Located directly on Hikkaduwa Beach, it offers feet-in-the-sand al fresco dining, oceanfront cocktails, and famous sunset views over the Indian Ocean.
-        </div>
+      <main className="w-full bg-white">
         <Hero />
+        <AiSummary />
         <FeaturesTicker />
         <About />
         <Menu />

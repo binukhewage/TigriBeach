@@ -18,6 +18,7 @@ export default function About() {
             <Image
               src="/ssdine.jpg"
               alt="Beachfront table setup at Tigri Beach Hikkaduwa"
+              title="Tigri Beach Restaurant Oceanfront Seating Setup"
               fill
               sizes="(max-width: 768px) 60vw, 30vw"
               className="object-cover transition-transform duration-700 hover:scale-105"
@@ -30,6 +31,7 @@ export default function About() {
               <Image
                 src="/about1.png"
                 alt="Golden hour beachfront dining at Hikkaduwa Sri Lanka"
+                title="Sunset Dining Experience at Tigri Beach Hikkaduwa"
                 fill
                 sizes="(max-width: 768px) 30vw, 15vw"
                 className="object-cover hover:scale-110 transition-all duration-700"
@@ -62,26 +64,13 @@ export default function About() {
             <div className="h-[2px] w-20 bg-primary mt-2" />
           </div>
 
-          <div className="flex flex-col gap-6 text-sm md:text-base text-slate-600 font-light leading-relaxed">
+          <div className="flex flex-col gap-6 text-sm md:text-base text-slate-600 font-light leading-relaxed animate-scroll-fade">
             <p>
-              Located directly on the sandy shores of Hikkaduwa, Sri Lanka,
-              Tigri Beach Restaurant has been welcoming travelers and seafood
-              lovers since 1999. What started as a small, family-owned kitchen
-              has grown into a coastal culinary landmark.
+              Tigri Beach Restaurant is located directly on the sun-drenched shores of Hikkaduwa Beach along Galle Road, Southern Province, Sri Lanka. Since our founding in 1999, we have welcomed travelers, surfers, and food enthusiasts from all over the world. What started as a humble, family-operated kitchen has grown over the past quarter-century into a coastal culinary landmark. Nestled in a prime oceanfront spot, the restaurant offers direct views of the Indian Ocean, where the cool ocean breeze and the soothing sound of the waves create a tranquil backdrop for an unforgettable dining experience.
             </p>
+            
             <p>
-              Every morning, our chefs head down to the harbor to source the
-              freshest catches—jumbo lobsters, crabs, tiger prawns, and reef
-              fish—straight from local Hikkaduwa fishermen. We believe in
-              minimal intervention cooking, letting the clean flavors of the sea
-              shine through with fresh herbs, local spices, and natural sea
-              salts.
-            </p>
-            <p>
-              Whether you are catching a golden sunset over a tropical cocktail
-              or enjoying a candle-lit lobster platter as the waves lap against
-              the shore, Tigri Beach offers a truly authentic, serene Sri Lankan
-              experience.
+              Tigri Beach is more than just a restaurant; it is a celebration of warm, traditional Sri Lankan hospitality. Our dedicated local team welcomes every guest like family, providing attentive and friendly service. Whether you are enjoying a relaxed lunch after surfing, sipping an Arrack Sour on our sun loungers, or dining at a candle-lit beachfront table with your feet in the sand during a golden sunset, we strive to make you feel at home. Visitors return year after year for this unique blend of premium local ingredients, authentic hospitality, and the absolute magic of dining at the water's edge. You can explore our <a href="#menu" className="text-primary font-semibold hover:underline">fresh seafood menu</a> or <a href="#contact" className="text-primary font-semibold hover:underline">book a sunset table</a> via WhatsApp.
             </p>
           </div>
 
@@ -104,9 +93,9 @@ export default function About() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-sm font-semibold text-slate-900 tracking-wide">
+                <h3 className="text-sm font-semibold text-slate-900 tracking-wide">
                   100% Beachfront
-                </h4>
+                </h3>
                 <p className="text-xs text-slate-500 font-light mt-1">
                   Dine right on the sand with full ocean vistas.
                 </p>
@@ -130,9 +119,9 @@ export default function About() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-sm font-semibold text-slate-900 tracking-wide">
+                <h3 className="text-sm font-semibold text-slate-900 tracking-wide">
                   Daily Catch
-                </h4>
+                </h3>
                 <p className="text-xs text-slate-500 font-light mt-1">
                   Zero-mile sourcing from local Hikkaduwa boats.
                 </p>

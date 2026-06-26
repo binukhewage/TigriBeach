@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <header
+    <section
       id="hero"
       className="relative min-h-screen w-full flex items-center justify-center overflow-hidden z-10 bg-[#FAF9F6]"
     >
@@ -10,7 +10,8 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 opacity-[0.03] select-none pointer-events-none">
         <Image
           src="/hero1.png"
-          alt="Subtle beach texture"
+          alt="Subtle beach sand texture decoration background"
+          title="Tigri Beach Background Sand Decoration"
           fill
           priority
           sizes="100vw"
@@ -31,7 +32,8 @@ export default function Hero() {
             <div className="absolute -top-24 w-[660px] h-[660px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.22)] group-hover:scale-105 group-hover:rotate-[8deg] transition-all duration-700 ease-out">
               <Image
                 src="/h7.png"
-                alt="Tigri Beach Restaurant fresh kebab plate"
+                alt="Tigri Beach Restaurant fresh seafood and kebab platter"
+                title="Tigri Beach Grilled Seafood Kebabs"
                 fill
                 priority
                 sizes="320px"
@@ -40,7 +42,7 @@ export default function Hero() {
             </div>
 
             {/* Arrow Button */}
-            <button className="w-10 h-10 rounded-full border border-black/10 text-slate-800 hover:bg-black/5 hover:text-slate-950 flex items-center justify-center transition-all duration-300 cursor-pointer mt-auto">
+            <button aria-label="View previous featured dish" className="w-10 h-10 rounded-full border border-black/10 text-slate-800 hover:bg-black/5 hover:text-slate-950 flex items-center justify-center transition-all duration-300 cursor-pointer mt-auto">
               <svg
                 className="w-5 h-5"
                 fill="none"
@@ -86,7 +88,8 @@ export default function Hero() {
               <div className="absolute -top-16 w-[420px] h-[420px] drop-shadow-[0_12px_25px_rgba(0,0,0,0.2)] hover:scale-105 hover:rotate-[6deg] transition-all duration-500 ease-out">
                 <Image
                   src="/h2.png"
-                  alt="Featured Salad Dish"
+                  alt="Featured salad dish with fresh tropical greens"
+                  title="Tigri Beach Featured Fresh Salad"
                   fill
                   priority
                   sizes="230px"
@@ -94,7 +97,7 @@ export default function Hero() {
                 />
               </div>
               {/* Arrow Button */}
-              <button className="w-8 h-8 rounded-full border border-black/10 text-slate-800 flex items-center justify-center transition-all duration-300">
+              <button aria-label="View featured dish details" className="w-8 h-8 rounded-full border border-black/10 text-slate-800 flex items-center justify-center transition-all duration-300">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
@@ -150,6 +153,7 @@ export default function Hero() {
               <Image
                 src="/h2.png"
                 alt="Tigri Beach Restaurant fresh Mediterranean salad plate"
+                title="Tigri Beach Fresh Mediterranean Salad Plate"
                 fill
                 priority
                 sizes="320px"
@@ -158,7 +162,7 @@ export default function Hero() {
             </div>
 
             {/* Arrow Button */}
-            <button className="w-10 h-10 rounded-full border border-black/10 text-slate-800 hover:bg-black/5 hover:text-slate-950 flex items-center justify-center transition-all duration-300 cursor-pointer mt-auto">
+            <button aria-label="View next featured dish" className="w-10 h-10 rounded-full border border-black/10 text-slate-800 hover:bg-black/5 hover:text-slate-950 flex items-center justify-center transition-all duration-300 cursor-pointer mt-auto">
               <svg
                 className="w-5 h-5"
                 fill="none"
@@ -237,42 +241,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Structured data block for AI and search crawler readability */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Restaurant",
-              "name": "Tigri Beach Restaurant",
-              "image": "https://tigribeach.com/hero.png",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "348, Galle Road",
-                "addressLocality": "Hikkaduwa",
-                "addressCountry": "LK"
-              },
-              "aggregateRating": [
-                {
-                  "@type": "AggregateRating",
-                  "ratingProvider": "Google",
-                  "ratingValue": "4.3",
-                  "reviewCount": "497",
-                  "bestRating": "5",
-                  "worstRating": "1"
-                },
-                {
-                  "@type": "AggregateRating",
-                  "ratingProvider": "TripAdvisor",
-                  "ratingValue": "4.2",
-                  "reviewCount": "600",
-                  "bestRating": "5",
-                  "worstRating": "1"
-                }
-              ]
-            })
-          }}
-        />
       </div>
 
       {/* Floating Scroll Indicator */}
@@ -297,6 +265,6 @@ export default function Hero() {
           />
         </svg>
       </div>
-    </header>
+    </section>
   );
 }
