@@ -231,6 +231,33 @@ export default function RootLayout({ children }) {
         "https://www.tripadvisor.com/Restaurant_Review-g304134-d4778071-Reviews-Tigri_Beach_Resturant-Hikkaduwa_Galle_District_Southern_Province.html",
         "https://maps.app.goo.gl/tigribeach"
       ],
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Hikkaduwa",
+          "sameAs": [
+            "https://en.wikipedia.org/wiki/Hikkaduwa",
+            "https://www.wikidata.org/wiki/Q1618065"
+          ]
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Southern Province",
+          "sameAs": [
+            "https://en.wikipedia.org/wiki/Southern_Province",
+            "https://www.wikidata.org/wiki/Q4533929"
+          ]
+        }
+      ],
+      "knowsAbout": [
+        "https://en.wikipedia.org/wiki/International",
+        "https://www.wikidata.org/wiki/Q2292662",
+        "https://en.wikipedia.org/wiki/International_cuisine",
+        "https://en.wikipedia.org/wiki/Sri_Lankan",
+        "https://www.wikidata.org/wiki/Q7586008",
+        "https://en.wikipedia.org/wiki/Sri_Lankan_cuisine",
+        "https://www.wikidata.org/wiki/Q2234037"
+      ],
       "keywords": [
         "Hikkaduwa seafood restaurant",
         "beachfront dining Hikkaduwa",
@@ -362,6 +389,8 @@ export default function RootLayout({ children }) {
         "cssSelector": ["#about", "#contact", ".quick-facts"]
       },
       "inLanguage": "en-US",
+      "datePublished": "2026-06-27",
+      "dateModified": "2026-06-27",
       "potentialAction": {
         "@type": "ReserveAction",
         "target": {

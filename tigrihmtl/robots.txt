@@ -64,4 +64,4 @@ Allow: /
 User-agent: FacebookBot
 Allow: /
 
-Sitemap: https://tigribeach.com/sitemap.xml
+Sitemap: https://tigri-beach.vercel.app/sitemap.xml

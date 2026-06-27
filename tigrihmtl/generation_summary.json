@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "project_id": "8548cc7e",
+  "source_url": "https://tigri-beach.vercel.app/",
+  "mode": "full",
+  "scores": {
+    "baseline": null,
+    "final": null,
+    "delta": null
+  },
+  "image_optimization": null,
+  "assets_localized": null,
+  "cost_usd_est": 0.0572,
+  "warnings": [],
+  "warning_count": 0,
+  "generated_at": "2026-06-27T05:04:09Z"
+}

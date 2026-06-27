@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "source_url": "https://tigri-beach.vercel.app/",
+  "limits": {
+    "max_pages": 12,
+    "max_depth": 2
+  },
+  "stats": {
+    "fetched": 1,
+    "failed": 0,
+    "blocked": 0,
+    "external_skipped": 11,
+    "asset_skipped": 0,
+    "duplicate_skipped": 0,
+    "missing_skipped": 0,
+    "too_deep_skipped": 0,
+    "max_pages_reached": false
+  },
+  "pages": [
+    {
+      "url": "https://tigri-beach.vercel.app/",
+      "output_rel": "index.html",
+      "db_path": "/",
+      "depth": 0,
+      "html_chars": 207230,
+      "title": "Tigri Beach Restaurant | Fresh Seafood & Sunset Vibe Hikkaduwa",
+      "description": "Dine with your feet in the sand at Hikkaduwa's premier beachfront seafood restaurant. Enjoy fresh lobster, lagoon crab, traditional Sri Lankan curries, and stunning tropical sunsets since 1999.",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Where the ocean sets the table"
+        },
+        {
+          "tag": "h2",
+          "text": "About Tigri Beach Restaurant"
+        },
+        {
+          "tag": "h3",
+          "text": "Quick Facts"
+        },
+        {
+          "tag": "h2",
+          "text": "Ocean on Your Plate, Sand at Your Feet"
+        },
+        {
+          "tag": "h3",
+          "text": "100% Beachfront"
+        },
+        {
+          "tag": "h3",
+          "text": "Daily Catch"
+        },
+        {
+          "tag": "h2",
+          "text": "Explore Our Menu"
+        },
+        {
+          "tag": "h3",
+          "text": "Tigri Seafood Platter"
+        },
+        {
+          "tag": "h3",
+          "text": "Jumbo Garlic Butter Tiger Prawns"
+        },
+        {
+          "tag": "h3",
+          "text": "Butter-Rosemary Grilled Snapper"
+        },
+        {
+          "tag": "h3",
+          "text": "The Seafood Platter Experience"
+        },
+        {
+          "tag": "h2",
+          "text": "Life at Tigri Beach"
+        },
+        {
+          "tag": "h3",
+          "text": "Local Art & Beach Vibes"
+        },
+        {
+          "tag": "h3",
+          "text": "Open-Air Beach Restaurant"
+        },
+        {
+          "tag": "h3",
+          "text": "Fresh Seafood Specialties"
+        },
+        {
+          "tag": "h3",
+          "text": "Sunset Beachfront Dining"
+        },
+        {
+          "tag": "h3",
+          "text": "Signature Grilled Lobster"
+        },
+        {
+          "tag": "h3",
+          "text": "Our Dining Experiences"
+        },
+        {
+          "tag": "h2",
+          "text": "What Our Diners Say"
+        },
+        {
+          "tag": "h3",
+          "text": "Sarah Jenkins"
+        },
+        {
+          "tag": "h3",
+          "text": "Michael Van Der Berg"
+        },
+        {
+          "tag": "h3",
+          "text": "Ruwan Bandara"
+        },
+        {
+          "tag": "h3",
+          "text": "Emma Watson"
+        },
+        {
+          "tag": "h3",
+          "text": "David Miller"
+        }
+      ],
+      "links": [
+        {
+          "text": "Find Us",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=Tigri+Beach+Restaurant+Hikkaduwa"
+        },
+        {
+          "text": "Checkout TripAdvisor Reviews",
+          "href": "https://www.tripadvisor.com/Restaurant_Review-g304134-d4778071-Reviews-Tigri_Beach_Resturant-Hikkaduwa_Galle_District_Southern_Province.html"
+        },
+        {
+          "text": "Write a review",
+          "href": "https://share.google/LtVgjRX3VIP4AQgZl"
+        },
+        {
+          "text": "Checkout Google Reviews",
+          "href": "https://share.google/LtVgjRX3VIP4AQgZl"
+        },
+        {
+          "text": "Book Table on WhatsApp",
+          "href": "https://wa.me/94771048202?text=Hi%20Tigri%20Beach!%20I'd%20like%20to%20reserve%20a%20table"
+        },
+        {
+          "text": "Get Driving Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=Tigri+Beach+Restaurant+Hikkaduwa"
+        },
+        {
+          "text": "(no anchor text)",
+          "href": "https://www.instagram.com/tigri.beach/"
+        },
+        {
+          "text": "(no anchor text)",
+          "href": "https://www.facebook.com/TigriTours/"
+        },
+        {
+          "text": "(no anchor text)",
+          "href": "https://www.tripadvisor.com/Restaurant_Review-g304134-d4778071-Reviews-Tigri_Beach_Resturant-Hikkaduwa_Galle_District_Southern_Province.html"
+        },
+        {
+          "text": "(no anchor text)",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=Tigri+Beach+Restaurant+Hikkaduwa"
+        },
+        {
+          "text": "Get Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=Tigri+Beach+Restaurant+Hikkaduwa"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://tigri-beach.vercel.app/logoonly.png",
+          "alt": "Tigri Beach Restaurant logo - Hikkaduwa beachfront dining",
+          "preserve": ""
+        },
+        {
+          "src": "https://tigri-beach.vercel.app/hero1.png",
+          "alt": "Subtle beach sand texture decoration background",
+          "preserve": ""
+        },
+        {
+          "src": "https://tigri-beach.vercel.app/h7.png",
+          "alt": "Tigri Beach Restaurant fresh seafood and kebab platter",
+          "preserve": ""
+        },
+        {
+          "src": "https://tigri-beach.vercel.app/h2.png",
+          "alt": "Featured salad dish with fresh tropical greens",
+          "preserve": ""
+        },
+        {
+          "src": "https://tigri-beach.vercel.app/ssdine.jpg",
+          "alt": "Beachfront table setup at Tigri Beach Hikkaduwa",
+          "preserve": ""
+        },
+        {
+          "src": "https://tigri-beach.vercel.app/about1.png",
+          "alt": "Golden hour beachfront dining at Hikkaduwa Sri Lanka",
+          "preserve": ""
+        },
+        {
+          "src": "https://tigri-beach.vercel.app/seafood_platter.jpg",
+          "alt": "Tigri Seafood Platter signature dish",
+          "preserve": ""
+        },
+        {
+          "src": "https://tigri-beach.vercel.app/hero.png",
+          "alt": "Open-air restaurant at Tigri Beach overlooking the Indian Ocean",
+          "preserve": ""
+        },
+        {
+          "src": "https://tigri-beach.vercel.app/seafood1.png",
+          "alt": "Fresh Sri Lankan mud crab seafood platter at Tigri Beach Restaurant",
+          "preserve": ""
+        },
+        {
+          "src": "https://tigri-beach.vercel.app/gallery1.png",
+          "alt": "Beachfront sunset dining at Tigri Beach Restaurant in Hikkaduwa Sri Lanka",
+          "preserve": ""
+        },
+        {
+          "src": "https://tigri-beach.vercel.app/lob.png",
+          "alt": "Grilled Sri Lankan lobster served at Tigri Beach Restaurant",
+          "preserve": ""
+        }
+      ],
+      "body_text": "Tigri Beach Restaurant | Fresh Seafood & Sunset Vibe Hikkaduwa ABOUT MENU GALLERY REVIEWS CONTACT Reserve a Table HIKKADUWA, SRI LANKA Where the ocean sets the table Fresh seafood \u2022 Beach vibes \u2022 Sunset views Explore the Menu Find Us 4.3\u2605 497+ Google Reviews 4.2\u2605 600+ TripAdvisor Reviews Top-Rated Reputation 50+ Countries Serving Guests Globally SCROLL Overview & Facts About Tigri Beach Restaurant Tigri Beach Restaurant is Hikkaduwa\u2019s premier oceanfront culinary destination, located directly on the golden shores of Hikkaduwa Beach along Galle Road in the Southern Province of Sri Lanka . Established in 1999, our family-owned restaurant has earned a global reputation as the ultimate destination for fresh, harbor-sourced seafood and authentic Sri Lankan hospitality. Our culinary philosophy centers on daily-caught seafood purchased every morning directly from local Hikkaduwa fishermen. We specialize in signature wood-fired and charcoal-grilled dishes, including our legendary lobster, giant lagoon crabs, jumbo tiger prawns, and ocean-fresh red snapper. Complementing our seafood grill, we serve traditional Ceylonese rice and curries, as well as a selection of Western favorites and signature tropical cocktails like the Ceylonese Arrack Sour. The dining experience at Tigri Beach is defined by its true feet-in-the-sand beachfront setting. Guests can enjoy panoramic ocean views of the Laccadive Sea and Hikkaduwa\u2019s famous coral reef, making it the perfect location for romantic sunset dinners, relaxed family lunches, and group celebrations under the stars. Positioned in the heart of Hikkaduwa\u2019s vibrant tourist zone, Tigri Beach Restaurant is just steps away from major local attractions, including the Hikkaduwa Coral Reef , Turtle Beach , and the main surf break . Whether you are a surfer looking to refuel, a couple seeking a romantic dinner at sunset, or a family enjoying a day on the beach, we cater to a diverse global audience with vegetarian-friendly, vegan, and gluten-free dietary options. Tigri Beach accepts reservations, credit cards (Visa and Mastercard), and offers free high-speed guest Wi-Fi and roadside parking. View Our Fresh Seafood Menu \u2192 | Book table on WhatsApp \u2192 Quick Facts Key details for visitors and digital assistants Cuisine Fresh Seafood, Sri Lankan, International Meals Breakfast, Lunch, Sunset, Dinner & Drinks Opening Hours Daily, 09:30 AM - 11:00 PM (GMT+5:30) Price Range Moderate ($$ / LKR 3,000 - 9,000 per person) Parking Free Roadside Parking on Galle Road Reservations Recommended (especially for sunset tables) Outdoor Seating 100% Beachfront tables (feet-in-the-sand) Payment Methods Visa, Mastercard & Cash (LKR, USD, EUR) Dietary Options Vegetarian, Vegan & Gluten-Free options Beachfront Yes, direct beach access & sunbeds Takeaway Available (order via Phone/WhatsApp) Family Friendly Yes, spacious outdoor beach setups Good for Couples Yes, romantic candle-lit sunset setups Good for Groups Yes, birthday parties & private beach events Beach \u2022 Free Wifi \u2022 Outdoor Seating \u2022 Reservations \u2022 Seating \u2022 Serves Alcohol \u2022 Table Service \u2022 Waterfront \u2022 Beach \u2022 Free Wifi \u2022 Outdoor Seating \u2022 Reservations \u2022 Seating \u2022 Serves Alcohol \u2022 Table Service \u2022 Waterfront \u2022 25+ Years of Fresh Catches The Tigri Story Ocean on Your Plate, Sand at Your Feet Tigri Beach Restaurant is located directly on the sun-drenched shores of Hikkaduwa Beach along Galle Road, Southern Province, Sri Lanka. Since our founding in 1999, we have welcomed travelers, surfers, and food enthusiasts from all over the world. What started as a humble, family-operated kitchen has grown over the past quarter-century into a coastal culinary landmark. Nestled in a prime oceanfront spot, the restaurant offers direct views of the Indian Ocean, where the cool ocean breeze and the soothing sound of the waves create a tranquil backdrop for an unforgettable dining experience. Tigri Beach is more than just a restaurant; it is a celebration of warm, traditional Sri Lankan hospitality. Our dedicated local team welcomes every guest like family, providing attentive and friendly service. Whether you are enjoying a relaxed lunch after surfing, sipping an Arrack Sour on our sun loungers, or dining at a candle-lit beachfront table with your feet in the sand during a golden sunset, we strive to make you feel at home. Visitors return year after year for this unique blend of premium local ingredients, authentic hospitality, and the absolute magic of dining at the water's edge. You can explore our fresh seafood menu or book a sunset table via WhatsApp. 100% Beachfront Dine right on the sand with full ocean vistas. Daily Catch Zero-mile sourcing from local Hikkaduwa boats. Culinary Offerings Explore Our Menu Hand-crafted beachfront specialties focusing on fresh catches and rich Sri Lankan heritage. Signatures Fresh Catch Ceylonese Curries Sunset Cocktails Tigri Seafood Platter LKR 14,500 ~$48.00 A colossal grill platter featuring fresh lobster, lagoon crab, tiger prawns, c"
+    }
+  ]
+}
