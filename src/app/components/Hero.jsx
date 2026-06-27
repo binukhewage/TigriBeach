@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -107,12 +108,12 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4 mt-2 animate-[heroFadeInUp_1.6s_ease-out]">
-            <a
-              href="#menu"
+            <Link
+              href="/#menu"
               className="px-7 py-3 text-xs md:text-sm font-bold uppercase tracking-wider text-white bg-primary rounded-full hover:bg-primary-hover shadow-lg shadow-primary/25 hover:shadow-primary/45 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
             >
               Explore the Menu
-            </a>
+            </Link>
             <a
               href="https://www.google.com/maps/dir/?api=1&destination=Tigri+Beach+Restaurant+Hikkaduwa"
               target="_blank"

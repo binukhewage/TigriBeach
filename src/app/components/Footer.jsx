@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-start">
         {/* Brand & Mission Column */}
         <div className="col-span-1 md:col-span-4 flex flex-col gap-4 animate-scroll-fade">
-          <a href="#hero" className="flex flex-col select-none">
+          <Link href="/#hero" className="flex flex-col select-none">
             <div className="relative w-[168px] h-[70px] md:w-[192px] md:h-[80px]">
               <Image
                 src="/logoonly.png"
@@ -25,7 +26,7 @@ export default function Footer() {
             <span className="text-[10px] tracking-[0.3em] text-slate-500 uppercase mt-2">
               Hikkaduwa • Seafood Restaurant
             </span>
-          </a>
+          </Link>
           <p className="text-xs md:text-sm font-light text-slate-600 leading-relaxed max-w-sm mt-2">
             Providing authentic beachside seafood dining experiences since 1999.
             Dine on the sand, watch the sunset, and experience local Ceylonese
@@ -93,11 +94,12 @@ export default function Footer() {
             Quick Links
           </h2>
           <div className="flex flex-col gap-2.5 text-sm text-slate-600 font-light">
-            <a href="#about" className="hover:text-primary transition-colors duration-200">About Us</a>
-            <a href="#menu" className="hover:text-primary transition-colors duration-200">Our Menu</a>
-            <a href="#gallery" className="hover:text-primary transition-colors duration-200">Life & Gallery</a>
-            <a href="#reviews" className="hover:text-primary transition-colors duration-200">Reviews</a>
-            <a href="#contact" className="hover:text-primary transition-colors duration-200">Find Us</a>
+            <Link href="/#about" className="hover:text-primary transition-colors duration-200">About Us</Link>
+            <Link href="/#menu" className="hover:text-primary transition-colors duration-200">Our Menu</Link>
+            <Link href="/#gallery" className="hover:text-primary transition-colors duration-200">Life & Gallery</Link>
+            <Link href="/#reviews" className="hover:text-primary transition-colors duration-200">Reviews</Link>
+            <Link href="/#contact" className="hover:text-primary transition-colors duration-200">Find Us</Link>
+            <a href="/llm.txt" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-200">AI Sitemap</a>
           </div>
         </div>
 
@@ -229,30 +231,30 @@ export default function Footer() {
           reserved.
         </span>
         <div className="flex gap-6">
-          <a
-            href="#about"
+          <Link
+            href="/#about"
             className="hover:text-primary transition-colors duration-200"
           >
             About
-          </a>
-          <a
-            href="#menu"
+          </Link>
+          <Link
+            href="/#menu"
             className="hover:text-primary transition-colors duration-200"
           >
             Menu
-          </a>
-          <a
-            href="#gallery"
+          </Link>
+          <Link
+            href="/#gallery"
             className="hover:text-primary transition-colors duration-200"
           >
             Gallery
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/#contact"
             className="hover:text-primary transition-colors duration-200"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

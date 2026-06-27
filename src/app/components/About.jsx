@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -71,7 +72,7 @@ export default function About() {
             </p>
             
             <p>
-              Tigri Beach is more than just a restaurant; it is a celebration of warm, traditional Sri Lankan hospitality. Our dedicated local team welcomes every guest like family, providing attentive and friendly service. Whether you are enjoying a relaxed lunch after surfing, sipping an Arrack Sour on our sun loungers, or dining at a candle-lit beachfront table with your feet in the sand during a golden sunset, we strive to make you feel at home. Visitors return year after year for this unique blend of premium local ingredients, authentic hospitality, and the absolute magic of dining at the water's edge. You can explore our <a href="#menu" className="text-primary font-semibold hover:underline">fresh seafood menu</a> or <a href="#contact" className="text-primary font-semibold hover:underline">book a sunset table</a> via WhatsApp.
+              Tigri Beach is more than just a restaurant; it is a celebration of warm, traditional Sri Lankan hospitality. Our dedicated local team welcomes every guest like family, providing attentive and friendly service. Whether you are enjoying a relaxed lunch after surfing, sipping an Arrack Sour on our sun loungers, or dining at a candle-lit beachfront table with your feet in the sand during a golden sunset, we strive to make you feel at home. Visitors return year after year for this unique blend of premium local ingredients, authentic hospitality, and the absolute magic of dining at the water's edge. You can explore our <Link href="/#menu" className="text-primary font-semibold hover:underline">fresh seafood menu</Link> or <Link href="/#contact" className="text-primary font-semibold hover:underline">book a sunset table</Link> via WhatsApp.
             </p>
           </div>
 

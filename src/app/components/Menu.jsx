@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Menu() {
   const [activeCategory, setActiveCategory] = useState("signatures");
@@ -281,12 +282,12 @@ export default function Menu() {
                     <span className="text-xs text-slate-400">Total Price</span>
                     <span className="text-lg font-bold text-primary">LKR 14,500 <span className="text-xs font-normal text-slate-400">/ ~$48</span></span>
                   </div>
-                  <a
-                    href="#contact"
+                  <Link
+                    href="/#contact"
                     className="px-6 py-2.5 bg-primary hover:bg-primary-hover text-white text-xs font-bold uppercase tracking-wider rounded-full transition-all duration-300 glow-btn-primary"
                   >
                     Reserve Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
