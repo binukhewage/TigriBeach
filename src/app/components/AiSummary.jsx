@@ -21,6 +21,7 @@ export default function AiSummary() {
   return (
     <section
       id="ai-summary"
+      aria-label="Overview and Quick Facts"
       className="relative bg-slate-50/40 border-t border-b border-slate-100 overflow-hidden sr-only"
     >
       {/* Decorative backdrop glow */}

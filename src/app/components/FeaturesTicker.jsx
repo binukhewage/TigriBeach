@@ -157,7 +157,7 @@ export default function FeaturesTicker() {
   ];
 
   return (
-    <div className="relative py-6 bg-white overflow-hidden w-full select-none z-30">
+    <section id="features-ticker" aria-label="Restaurant Features Ticker" className="relative py-6 bg-white overflow-hidden w-full select-none z-30">
       <div className="animate-marquee flex items-center gap-16">
         {/* Set 1 */}
         {features.map((feature, idx) => (
@@ -190,6 +190,6 @@ export default function FeaturesTicker() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

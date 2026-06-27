@@ -51,6 +51,7 @@ export default function FAQ() {
   return (
     <section
       id="faq"
+      aria-label="Frequently Asked Questions"
       className="relative py-24 md:py-32 bg-white border-t border-slate-100 overflow-hidden"
     >
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/[0.02] rounded-full blur-[140px] pointer-events-none" />
