@@ -61,7 +61,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="w-full bg-white">
+      <main id="main-content" className="w-full bg-white">
         <Hero />
         <AiSummary />
         <FeaturesTicker />

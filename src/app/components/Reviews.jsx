@@ -58,6 +58,7 @@ export default function Reviews() {
   return (
     <section
       id="reviews"
+      aria-label="Guest Reviews"
       className="relative py-24 md:py-32 bg-white overflow-hidden"
     >
       {/* Background glow effects */}

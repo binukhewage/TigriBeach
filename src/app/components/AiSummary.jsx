@@ -72,9 +72,8 @@ export default function AiSummary() {
           </div>
         </div>
 
-        {/* Right Column: Visual Quick Facts Panel */}
         <div className="col-span-1 lg:col-span-5 w-full sticky top-28 animate-scroll-right">
-          <div className="glassmorphism-card p-6 md:p-8 rounded-3xl border border-slate-150 bg-white flex flex-col gap-6 hover:shadow-lg transition-all duration-300">
+          <div className="quick-facts glassmorphism-card p-6 md:p-8 rounded-3xl border border-slate-150 bg-white flex flex-col gap-6 hover:shadow-lg transition-all duration-300">
             <div className="border-b border-slate-100 pb-4">
               <h3 className="font-serif text-xl font-bold text-slate-900">
                 Quick Facts

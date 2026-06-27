@@ -127,11 +127,12 @@ export default function Footer() {
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-              <span>
-                348, Galle Road,
+              <address itemScope itemType="https://schema.org/PostalAddress" className="not-italic font-normal text-slate-650">
+                <span itemProp="streetAddress">348, Galle Road</span>,
                 <br />
-                Hikkaduwa, Sri Lanka
-              </span>
+                <span itemProp="addressLocality">Hikkaduwa</span>,{" "}
+                <span itemProp="addressCountry">Sri Lanka</span>
+              </address>
             </div>
 
             <div className="flex items-start gap-3">

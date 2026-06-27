@@ -169,7 +169,7 @@ export default function Menu() {
   };
 
   return (
-    <section id="menu" className="relative py-24 md:py-32 bg-slate-50/60 border-t border-slate-100">
+    <section id="menu" aria-label="Tigri Beach Menu" className="relative py-24 md:py-32 bg-slate-50/60 border-t border-slate-100">
       {/* Soft color glow matching Light Mode style */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/[0.02] rounded-full blur-[140px] pointer-events-none" />
 

@@ -4,6 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
+      aria-label="About Tigri Beach Restaurant"
       className="relative py-24 md:py-32 overflow-hidden bg-white"
     >
       {/* Subtle decorative background glows */}

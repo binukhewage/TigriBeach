@@ -77,6 +77,8 @@ export default function FAQ() {
             return (
               <div
                 key={index}
+                itemScope
+                itemType="https://schema.org/Question"
                 className="bg-slate-50/50 hover:bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 hover:border-primary/20 transition-all duration-300"
               >
                 {/* Accordion Trigger */}
@@ -85,7 +87,7 @@ export default function FAQ() {
                   className="w-full px-6 py-5 flex items-center justify-between text-left font-semibold text-sm md:text-base text-slate-800 hover:text-primary transition-colors duration-200 focus:outline-none cursor-pointer"
                   aria-expanded={isOpen}
                 >
-                  <span>{faq.question}</span>
+                  <span itemProp="name">{faq.question}</span>
                   <span
                     className={`ml-4 text-primary transition-transform duration-300 ${
                       isOpen ? "rotate-180" : "rotate-0"
@@ -116,8 +118,13 @@ export default function FAQ() {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="px-6 py-5 text-xs md:text-sm font-light text-slate-650 leading-relaxed">
-                    {faq.answer}
+                  <div
+                    itemScope
+                    itemType="https://schema.org/Answer"
+                    itemProp="acceptedAnswer"
+                    className="px-6 py-5 text-xs md:text-sm font-light text-slate-650 leading-relaxed"
+                  >
+                    <p itemProp="text">{faq.answer}</p>
                   </div>
                 </div>
               </div>

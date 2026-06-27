@@ -2,6 +2,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
+      aria-label="Contact and Reservations"
       className="relative py-24 md:py-32 bg-slate-50/60 border-t border-slate-100 overflow-hidden"
     >
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/[0.02] rounded-full blur-[140px] pointer-events-none" />
@@ -38,10 +39,11 @@ export default function Contact() {
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-base font-bold text-slate-900 tracking-wide uppercase">Address</h3>
-                <p className="text-sm text-slate-600 font-light leading-relaxed mt-1">
-                  348, Galle Road,<br />
-                  Hikkaduwa, Sri Lanka
-                </p>
+                <address itemScope itemType="https://schema.org/PostalAddress" className="not-italic font-normal text-sm text-slate-600 leading-relaxed mt-1">
+                  <span itemProp="streetAddress">348, Galle Road</span>,<br />
+                  <span itemProp="addressLocality">Hikkaduwa</span>,{" "}
+                  <span itemProp="addressCountry">Sri Lanka</span>
+                </address>
                 <span className="text-xs text-slate-400 font-light mt-2 italic">
                   Right on the beachfront
                 </span>
@@ -171,9 +173,12 @@ export default function Contact() {
 
               {/* Action buttons */}
               <div className="px-2 py-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-100 mt-2">
-                <div className="flex flex-col">
+                <div className="flex flex-col" itemScope itemType="https://schema.org/PostalAddress">
                   <span className="text-xs text-slate-400">Google Map Link</span>
-                  <span className="text-sm font-semibold text-slate-900 mt-0.5">348 Galle Road, Hikkaduwa</span>
+                  <span className="text-sm font-semibold text-slate-900 mt-0.5">
+                    <span itemProp="streetAddress">348 Galle Road</span>,{" "}
+                    <span itemProp="addressLocality">Hikkaduwa</span>
+                  </span>
                 </div>
                 <a
                   href="https://www.google.com/maps/dir/?api=1&destination=Tigri+Beach+Restaurant+Hikkaduwa"
