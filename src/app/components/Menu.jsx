@@ -5,166 +5,117 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Menu() {
-  const [activeCategory, setActiveCategory] = useState("signatures");
+  const [activeCategory, setActiveCategory] = useState("seafood");
 
   const categories = [
-    { id: "signatures", name: "Signatures" },
-    { id: "seafood", name: "Fresh Catch" },
-    { id: "curries", name: "Ceylonese Curries" },
-    { id: "drinks", name: "Sunset Cocktails" },
+    { id: "seafood", name: "Tigri Special Seafood" },
+    { id: "breakfast", name: "Breakfast" },
+    { id: "drinks", name: "Drinks" },
   ];
 
   const menuItems = {
-    signatures: [
-      {
-        name: "Tigri Seafood Platter",
-        description: "A colossal grill platter featuring fresh lobster, lagoon crab, tiger prawns, calamari, and catch-of-the-day reef fish, served with garlic herb butter, fries, and salad.",
-        priceLkr: "LKR 14,500",
-        priceUsd: "~$48.00",
-        tags: ["Popular", "Sourced Today", "Serves 2"],
-        ingredients: "Fresh Rock Lobster, Lagoon Crab, Tiger Prawns, Calamari, Snapper, Garlic, Lemon Butter, Herbs",
-        cuisine: "Sri Lankan Seafood / Western Grill",
-        category: "Signatures",
-        whyPopular: "Featuring a daily selection of harbor-fresh catches grilled over coconut charcoal to smoky perfection.",
-        imageAlt: "Colossal grilled seafood platter with lobster, crab, prawns and calamari",
-      },
-      {
-        name: "Jumbo Garlic Butter Tiger Prawns",
-        description: "Huge tiger prawns grilled on order, tossed in a sizzling pan of clarified butter, roasted garlic, and fine parsley.",
-        priceLkr: "LKR 6,200",
-        priceUsd: "~$20.50",
-        tags: ["Chef Special"],
-        ingredients: "Jumbo Tiger Prawns, Clarified Butter, Roasted Garlic, Fresh Parsley, Lemon Juice",
-        cuisine: "Sri Lankan / Western Fusion",
-        category: "Signatures",
-        whyPopular: "Highly requested for the massive size of the local prawns and the rich, garlic-infused butter sauce.",
-        imageAlt: "Grilled jumbo tiger prawns served with garlic butter sauce and lemon slices",
-      },
-      {
-        name: "Butter-Rosemary Grilled Snapper",
-        description: "Whole red snapper pan-seared with fresh rosemary sprigs, garlic cloves, and lemon juice over hot coals.",
-        priceLkr: "LKR 5,800",
-        priceUsd: "~$19.20",
-        tags: ["Fresh Catch"],
-        ingredients: "Whole Red Snapper, Fresh Rosemary, Garlic Cloves, Olive Oil, Lemon Juice, Sea Salt",
-        cuisine: "Mediterranean Seafood Grill",
-        category: "Signatures",
-        whyPopular: "A classic beachfront dish showcasing the fresh, clean flavors of daily-caught white reef fish.",
-        imageAlt: "Whole grilled red snapper fish garnished with rosemary sprigs and lemon",
-      },
-    ],
     seafood: [
       {
-        name: "Deviled Calamari",
-        description: "Tender ocean calamari rings tossed in a fiery, sweet-and-sour Sri Lankan deviled sauce with thick-cut bell peppers and onions.",
-        priceLkr: "LKR 3,900",
-        priceUsd: "~$13.00",
-        tags: ["Spicy"],
-        ingredients: "Ocean Calamari, Red Chili Paste, Bell Peppers, Red Onions, Garlic, Ginger, Soy Sauce, Green Chili",
-        cuisine: "Sri Lankan Deviled",
-        category: "Fresh Catch",
-        whyPopular: "A local favorite featuring a perfect balance of spicy, sweet, and tangy flavors that pair well with cold beer.",
-        imageAlt: "Spicy Sri Lankan deviled calamari rings with peppers and onions in a red sauce",
+        name: "01. Tigri Special Full Fish",
+        description: "Served with chips and salad (For One Person). Your choice of Dorado, Barracuda, or Coral Fish, cooked with fresh tomato, ginger, lime, and tasty garlic butter sauce.",
+        priceLkr: "LKR 3,000",
+        priceUsd: "~$10.00",
+        tags: ["Fresh Catch", "Popular"],
+        ingredients: "Dorado, Barracuda or Coral Fish, Fresh Tomato, Ginger, Lime, Garlic Butter Sauce",
+        cuisine: "Sri Lankan Seafood",
+        category: "Catch of the Day",
+        whyPopular: "One of our signature seafood dishes prepared using freshly caught reef fish.",
+        imageAlt: "Tigri Special Full Fish with chips and salad",
       },
       {
-        name: "Charcoal Grilled Lobster",
-        description: "Freshly harvested rock lobster basted with lemon juice and olive oil, slowly grilled over coconut charcoal.",
-        priceLkr: "By Weight / 100g",
-        priceUsd: "Market Price",
-        tags: ["Premium", "Live Catch"],
-        ingredients: "Live Rock Lobster, Olive Oil, Fresh Lemon Juice, Sea Salt, Cracked Black Pepper, Garlic Butter",
-        cuisine: "Fresh Seafood Grill",
-        category: "Fresh Catch",
-        whyPopular: "Guests hand-select their lobster from our daily display to be custom-grilled on the beach.",
-        imageAlt: "Fresh whole lobster charcoal-grilled on the beach and served with lemon",
+        name: "02. Tigri Special Mix Prawns",
+        description: "Served with chips and salad (For One Person). Jumbo prawns and tiger prawns cooked with fresh tomato, ginger and lime.",
+        priceLkr: "LKR 5,000",
+        priceUsd: "~$16.50",
+        tags: ["Popular"],
+        ingredients: "Jumbo Prawns, Tiger Prawns, Fresh Tomato, Ginger, Lime",
+        cuisine: "Sri Lankan Seafood",
+        category: "Catch of the Day",
+        whyPopular: "Fresh jumbo and tiger prawns prepared with simple coastal flavors.",
+        imageAlt: "Tigri Special Mix Prawns with chips and salad",
       },
       {
-        name: "Crispy Fried Reef Fish Fillet",
-        description: "Locally caught white fish coated in a light spiced batter, fried until golden, served with homemade tartar sauce.",
-        priceLkr: "LKR 3,600",
-        priceUsd: "~$12.00",
-        tags: [],
-        ingredients: "White Reef Fish Fillet, Spiced Flour Batter, Tartar Sauce (Mayonnaise, Dill, Capers, Lemon)",
-        cuisine: "International Seafood",
-        category: "Fresh Catch",
-        whyPopular: "Crispy, golden batter locking in the delicate juices of the fresh daily-caught reef fish.",
-        imageAlt: "Crispy golden fried fish fillets served with tartar sauce",
+        name: "03. Tigri Special Crabs",
+        description: "Served with chips and salad (For One Person). Fresh crabs cooked with Tigri Special Mix Sauce.",
+        priceLkr: "LKR 8,500",
+        priceUsd: "~$28.00",
+        tags: ["Chef Special"],
+        ingredients: "Fresh Local Crabs, Tigri Special Mix Sauce",
+        cuisine: "Sri Lankan Seafood",
+        category: "Catch of the Day",
+        whyPopular: "A signature crab dish cooked in our house special seafood sauce.",
+        imageAlt: "Tigri Special Crabs with chips and salad",
       },
-    ],
-    curries: [
+  ],
+
+    breakfast: [
       {
-        name: "Hikkaduwa Lagoon Crab Curry",
-        description: "Aromatic Sri Lankan mud crab simmered in a rich toasted coconut gravy with fresh curry leaves, lemongrass, and local spices. Served with steamed basmati rice and dhal.",
-        priceLkr: "LKR 7,500",
-        priceUsd: "~$24.80",
-        tags: ["Authentic", "Highly Recommended"],
-        ingredients: "Lagoon Mud Crab, Roasted Curry Powder, Coconut Milk, Lemongrass, Curry Leaves, Fenugreek, Pandan Leaves",
+        name: "07. Breakfast",
+        description: "Pot of tea or coffee, egg (boiled, fried or scrambled), toast with butter and jam, slice of cheese and fruit juice.",
+        priceLkr: "LKR 2,000",
+        priceUsd: "~$6.50",
+        tags: ["Classic"],
+        ingredients: "Tea/Coffee, Eggs, Toast, Butter, Jam, Cheese, Fruit Juice",
+        cuisine: "Continental Breakfast",
+        category: "Breakfast",
+        whyPopular: "A hearty breakfast before exploring Hikkaduwa.",
+        imageAlt: "Breakfast with eggs toast and coffee",
+      },
+      {
+        name: "08. Sri Lankan Breakfast",
+        description: "Pot of tea or coffee with String Hoppers, Coconut Rotti or Milk Rice served with dhal curry, fish curry, egg curry, fried egg or coconut sambol.",
+        priceLkr: "LKR 2,000",
+        priceUsd: "~$6.50",
+        tags: ["Authentic", "Must Try"],
+        ingredients: "Tea/Coffee, String Hoppers, Coconut Rotti, Milk Rice, Dhal Curry, Fish Curry, Egg Curry, Fried Egg, Coconut Sambol",
         cuisine: "Authentic Sri Lankan",
-        category: "Ceylonese Curries",
-        whyPopular: "Our signature local specialty, showcasing the rich spices and fresh seafood heritage of Hikkaduwa.",
-        imageAlt: "Spicy traditional Sri Lankan mud crab curry in a clay pot served with rice",
-      },
-      {
-        name: "Traditional Fish Ambul Thiyal",
-        description: "A Southern Sri Lankan specialty: cubed tuna cooked in a sour and dry thick curry paste made from black goraka (garcinia), black pepper, and spices.",
-        priceLkr: "LKR 4,200",
-        priceUsd: "~$14.00",
-        tags: ["Sour & Spicy"],
-        ingredients: "Cubed Yellowfin Tuna, Black Goraka Paste, Ground Black Pepper, Cardamom, Cloves, Curry Leaves",
-        cuisine: "Southern Sri Lankan",
-        category: "Ceylonese Curries",
-        whyPopular: "An ancient southern method of preserving fish, delivering a unique, tangy, and deeply peppery flavor profile.",
-        imageAlt: "Traditional dark and dry tuna fish curry Ambul Thiyal in a clay dish",
-      },
-      {
-        name: "Red Prawn Coconut Curry",
-        description: "Medium-sized tiger prawns simmered in mild coconut milk, seasoned with turmeric, fenugreek, and fresh green chilies.",
-        priceLkr: "LKR 4,900",
-        priceUsd: "~$16.20",
-        tags: ["Mild"],
-        ingredients: "Tiger Prawns, Coconut Milk, Turmeric, Fenugreek, Onion, Garlic, Green Chilies, Pandan Leaves",
-        cuisine: "Sri Lankan Coconut Curry",
-        category: "Ceylonese Curries",
-        whyPopular: "A mild, creamy curry with aromatic spices that highlight the sweetness of fresh ocean prawns.",
-        imageAlt: "Mild and creamy yellow prawn coconut curry with fresh herbs",
+        category: "Breakfast",
+        whyPopular: "A traditional Sri Lankan breakfast loved by locals and visitors.",
+        imageAlt: "Sri Lankan Breakfast",
       },
     ],
+
     drinks: [
       {
-        name: "Ceylonese Arrack Sour",
-        description: "Premium local coconut arrack shaken with fresh lime juice, cane sugar syrup, and egg whites, served over crushed ice with an orange wheel.",
+        name: "13. Virgin Mojito",
+        description: "Fresh mint, lime, ice and soda.",
+        priceLkr: "LKR 1,200",
+        priceUsd: "~$4.00",
+        tags: ["Mocktail", "Non-Alcoholic"],
+        ingredients: "Mint, Lime, Ice, Soda",
+        cuisine: "Mocktail",
+        category: "Drinks",
+        whyPopular: "A refreshing tropical cooler.",
+        imageAlt: "Virgin Mojito",
+      },
+      {
+        name: "14. Pineapple Mojito",
+        description: "Mint, pineapple juice, soda, lime and ice.",
+        priceLkr: "LKR 1,200",
+        priceUsd: "~$4.00",
+        tags: ["Mocktail", "Non-Alcoholic"],
+        ingredients: "Mint, Pineapple Juice, Soda, Lime, Ice",
+        cuisine: "Mocktail",
+        category: "Drinks",
+        whyPopular: "Made with sweet local pineapple juice.",
+        imageAlt: "Pineapple Mojito",
+      },
+      {
+        name: "16. Tigri Special Cocktail",
+        description: "White rum, lime, sugar, orange juice, pineapple juice and ice.",
         priceLkr: "LKR 1,800",
         priceUsd: "~$6.00",
-        tags: ["Signature Cocktail"],
-        ingredients: "Coconut Arrack, Fresh Lime Juice, Cane Sugar Syrup, Egg White, Ice, Orange Slices",
-        cuisine: "Sri Lankan Cocktail",
-        category: "Sunset Cocktails",
-        whyPopular: "A classic Sri Lankan beach cocktail utilizing the unique sweet flavor of distilled coconut nectar.",
-        imageAlt: "Ceylonese Arrack Sour cocktail in a glass garnished with an orange wheel",
-      },
-      {
-        name: "Hikkaduwa Sunset Mojito",
-        description: "White rum muddled with fresh mint leaves, lime chunks, organic wild bee honey, and topped with sparkling soda water.",
-        priceLkr: "LKR 1,600",
-        priceUsd: "~$5.30",
-        tags: ["Refreshing"],
-        ingredients: "White Rum, Fresh Mint Leaves, Lime Chunks, Wild Bee Honey, Club Soda, Crushed Ice",
-        cuisine: "Tropical Cocktail",
-        category: "Sunset Cocktails",
-        whyPopular: "Light, sweet, and minty, making it the perfect refreshing companion as the sun goes down.",
-        imageAlt: "Refreshing tropical mojito cocktail with mint leaves and lime chunks",
-      },
-      {
-        name: "Tambili (King Coconut) Rum Punch",
-        description: "Fresh local sweet king coconut water spiked with white rum, triple sec, a dash of lime, and served in the shell.",
-        priceLkr: "LKR 2,100",
-        priceUsd: "~$7.00",
-        tags: ["Must Try"],
-        ingredients: "King Coconut Water, White Rum, Triple Sec, Lime Juice, Cherry, served inside the Tambili Shell",
-        cuisine: "Tigri Signature Drink",
-        category: "Sunset Cocktails",
-        whyPopular: "Served inside a freshly cut local orange king coconut, offering a true tropical island aesthetic.",
-        imageAlt: "Signature Rum Punch cocktail served inside a fresh orange king coconut shell",
+        tags: ["Signature Cocktail", "Alcoholic"],
+        ingredients: "White Rum, Lime, Sugar, Orange Juice, Pineapple Juice, Ice",
+        cuisine: "Signature Cocktail",
+        category: "Drinks",
+        whyPopular: "Tigri Beach's signature tropical cocktail.",
+        imageAlt: "Tigri Special Cocktail",
       },
     ],
   };
@@ -206,7 +157,7 @@ export default function Menu() {
           ))}
         </div>
 
-        {/* Interactive Menu Content Grid */}
+        {/* Interactive Menu Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* Left: Dishes List */}
@@ -226,9 +177,6 @@ export default function Menu() {
                     <span className="text-base md:text-lg font-bold text-primary">
                       {item.priceLkr}
                     </span>
-                    <span className="text-[10px] text-slate-400 tracking-wide">
-                      {item.priceUsd}
-                    </span>
                   </div>
                 </div>
 
@@ -236,6 +184,14 @@ export default function Menu() {
                 <p className="text-xs md:text-sm font-light text-slate-600 leading-relaxed max-w-xl">
                   {item.description}
                 </p>
+
+                {/* Ingredients */}
+                {item.ingredients && (
+                  <p className="text-[11px] md:text-xs text-slate-500 font-light italic mt-1">
+                    <span className="font-semibold not-italic text-slate-700">Ingredients: </span>
+                    {item.ingredients}
+                  </p>
+                )}
 
                 {/* Badges / Tags */}
                 {item.tags.length > 0 && (
@@ -254,33 +210,35 @@ export default function Menu() {
             ))}
           </div>
 
-          {/* Right: Immersive Picture Card Showcase */}
-          <div className="col-span-1 lg:col-span-5 h-full lg:sticky lg:top-28 animate-scroll-right">
+          {/* Right: Immersive Picture Card Showcase & PDF Downloads */}
+          <div className="col-span-1 lg:col-span-5 h-full lg:sticky lg:top-28 flex flex-col gap-6 animate-scroll-right">
+            
+            {/* The Experience Card */}
             <div className="glassmorphism-card p-4 rounded-3xl overflow-hidden flex flex-col gap-4">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-100">
                 <Image
                   src="/seafood_platter.jpg"
-                  alt="Tigri Seafood Platter signature dish"
-                  title="Tigri Beach Signature Seafood Platter"
+                  alt="Tigri Special Sea Food Full Plate"
+                  title="Tigri Special Sea Food Full Plate"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover"
                 />
                 <div className="absolute top-4 left-4 z-20 px-3 py-1.5 bg-black/60 backdrop-blur-md rounded-lg border border-white/10">
                   <span className="text-[10px] font-bold text-accent uppercase tracking-widest leading-none glow-text-amber">
-                    Catch of the Day
+                    Tigri Special
                   </span>
                 </div>
               </div>
               <div className="px-2 py-4 flex flex-col gap-2">
-                <h3 className="font-serif text-xl font-bold text-slate-900">The Seafood Platter Experience</h3>
+                <h3 className="font-serif text-xl font-bold text-slate-900">Tigri Special Full Plate</h3>
                 <p className="text-xs text-slate-500 font-light leading-relaxed">
-                  Our signature platter showcases the finest bounty that the Laccadive Sea provides. Prepared fresh over natural coconut charcoal grills and spiced with local herbs.
+                  Our ultimate signature seafood feast featuring prawns, jumbo prawns, tiger prawns, calamari, crabs, lobster, and full fish. Cooked with lime, fresh tomato sauce, and tasty garlic butter.
                 </p>
                 <div className="flex items-center justify-between mt-4 pt-4 border-t border-slate-100">
                   <div className="flex flex-col">
                     <span className="text-xs text-slate-400">Total Price</span>
-                    <span className="text-lg font-bold text-primary">LKR 14,500 <span className="text-xs font-normal text-slate-400">/ ~$48</span></span>
+                    <span className="text-lg font-bold text-primary">LKR 14,000</span>
                   </div>
                   <Link
                     href="/#contact"
@@ -291,9 +249,50 @@ export default function Menu() {
                 </div>
               </div>
             </div>
+
+            {/* Premium Download PDF Card */}
+            <div className="glassmorphism-card p-6 rounded-3xl border border-slate-200/80 shadow-lg bg-white text-slate-900 flex flex-col gap-4 relative overflow-hidden">
+              {/* Decorative backgrounds */}
+              <div className="absolute -top-12 -right-12 w-32 h-32 bg-primary/5 rounded-full blur-[40px] pointer-events-none" />
+              <div className="absolute -bottom-12 -left-12 w-24 h-24 bg-accent/5 rounded-full blur-[30px] pointer-events-none" />
+              
+              <div className="relative z-10 flex flex-col gap-1">
+                <h4 className="font-serif text-base font-bold text-slate-900">Tigri Full Menu</h4>
+                <p className="text-xs text-slate-500 font-light leading-relaxed">
+                  See Our Complete Menu From Here
+                </p>
+              </div>
+              
+              <div className="relative z-10 grid grid-cols-2 gap-3">
+                <a
+                  href="/Tigri_Full_Food_Menu.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 px-4 py-3 bg-primary hover:bg-primary-hover text-white rounded-2xl text-[11px] font-bold tracking-wider uppercase transition-all duration-300 shadow-md shadow-primary/20 hover:scale-102 cursor-pointer"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                  </svg>
+                  Food Menu
+                </a>
+                <a
+                  href="/Tigri_Full_Drinks_Menu.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 px-4 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-2xl text-[11px] font-bold tracking-wider uppercase transition-all duration-300 border border-slate-200 hover:scale-102 cursor-pointer"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                  </svg>
+                  Drinks Menu
+                </a>
+              </div>
+            </div>
+
           </div>
 
         </div>
+
       </div>
     </section>
   );

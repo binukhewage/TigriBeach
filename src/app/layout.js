@@ -1,5 +1,4 @@
 import { Playfair_Display, Outfit } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -415,10 +414,9 @@ export default function RootLayout({ children }) {
       className={`${playfair.variable} ${outfit.variable} h-full antialiased`}
     >
       <head>
-        <Script
+        <script
           id="structured-data"
           type="application/ld+json"
-          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArray) }}
         />
       </head>
