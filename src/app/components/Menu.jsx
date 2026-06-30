@@ -79,7 +79,6 @@ export default function Menu() {
         imageAlt: "Sri Lankan Breakfast",
       },
     ],
-
     drinks: [
       {
         name: "13. Virgin Mojito",
