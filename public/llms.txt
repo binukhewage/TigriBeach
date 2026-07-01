@@ -1,0 +1,35 @@
+# Tigri Beach Restaurant
+
+A beachfront seafood restaurant located on Hikkaduwa Beach in Hikkaduwa, Sri Lanka, established in 1999. The family-owned establishment specializes in daily harbor-sourced seafood and traditional Sri Lankan cuisine.
+
+## Business Details
+- **Official Name**: Tigri Beach Restaurant
+- **Website**: https://tigribeach.com
+- **Detailed Profile**: https://tigribeach.com/llms-full.txt
+- **Established**: 1999
+
+## Contact Information
+- **Phone Number**: +94 77 104 8202
+- **WhatsApp**: +94 77 104 8202
+
+## Location & Address
+- **Physical Address**: 348, Galle Road, Hikkaduwa, Sri Lanka
+- **Setting**: Beachfront (Hikkaduwa Beach)
+
+## Opening Hours
+- **Schedule**: Monday to Sunday
+- **Hours**: 09:30 AM - 11:00 PM (GMT+5:30)
+- **Meals Served**: Breakfast, Lunch, Dinner, Drinks
+
+## Important Website Pages
+- **Main Website**: https://tigribeach.com/
+- **About**: https://tigribeach.com/#about
+- **Menu**: https://tigribeach.com/#menu
+- **Gallery**: https://tigribeach.com/#gallery
+- **Reviews**: https://tigribeach.com/#reviews
+- **Contact & Reservations**: https://tigribeach.com/#contact
+- **FAQ**: https://tigribeach.com/#faq
+
+## Direct Document Links
+- **Food Menu (PDF)**: https://tigribeach.com/Tigri_Full_Food_Menu.pdf
+- **Drinks Menu (PDF)**: https://tigribeach.com/Tigri_Full_Drinks_Menu.pdf

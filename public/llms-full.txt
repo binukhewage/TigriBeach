@@ -1,0 +1,110 @@
+# Tigri Beach Restaurant
+
+## Overview
+Tigri Beach Restaurant is a beachfront restaurant located on Hikkaduwa Beach along Galle Road, Southern Province, Sri Lanka. Established in 1999, the family-owned establishment specializes in daily-sourced seafood and traditional Sri Lankan cuisine, serving travelers, surfers, and local guests.
+
+## Business Information
+- **Official Brand Name**: Tigri Beach Restaurant (also referred to as Tigri Beach Restaurant Hikkaduwa)
+- **Domain**: https://tigribeach.com
+- **Established Year**: 1999
+- **Price Range**: Moderate (LKR 3,000 - 9,000 per person)
+- **Payment Methods**: Visa, Mastercard, and Cash (LKR, USD, EUR)
+- **Sourcing Policy**: Daily catches purchased directly from local Hikkaduwa fishermen at the harbor each morning.
+
+## Contact Information
+- **Phone / WhatsApp**: +94 77 104 8202
+- **Website**: https://tigribeach.com
+- **WhatsApp Link**: https://wa.me/94771048202?text=Hi%20Tigri%20Beach!%20I'd%20like%20to%20reserve%20a%20table
+- **TripAdvisor Listing**: https://www.tripadvisor.com/Restaurant_Review-g304134-d4778071-Reviews-Tigri_Beach_Resturant-Hikkaduwa_Galle_District_Southern_Province.html
+- **Social Media**:
+  - Instagram: https://www.instagram.com/tigri.beach/
+  - Facebook: https://www.facebook.com/TigriTours/
+
+## Opening Hours
+- **Schedule**: Monday to Sunday, open daily
+- **Hours**: 09:30 AM - 11:00 PM (GMT+5:30)
+- **Meal Periods**: Breakfast, Lunch, Sunset Snacks, Dinner, and Drinks
+
+## Cuisine
+- **Type**: Seafood, Authentic Sri Lankan, and Western/International options.
+- **Dietary Accommodations**: Vegetarian, Vegan, and Gluten-Free options available daily.
+
+## Signature Dishes
+- **Tigri Special Full Plate (LKR 14,000)**: A seafood platter featuring lobster, crabs, tiger prawns, jumbo prawns, calamari, and a full fish, cooked with lime, tomato sauce, and garlic butter.
+- **01. Tigri Special Full Fish (LKR 3,000 / ~$10.00)**: Choice of Dorado, Barracuda, or Coral Fish, cooked with tomato, ginger, lime, and garlic butter sauce. Served with chips and salad.
+- **02. Tigri Special Mix Prawns (LKR 5,000 / ~$16.50)**: Jumbo prawns and tiger prawns cooked with tomato, ginger, and lime. Served with chips and salad.
+- **03. Tigri Special Crabs (LKR 8,500 / ~$28.00)**: Local crabs cooked in a house special seafood sauce. Served with chips and salad.
+- **08. Sri Lankan Breakfast (LKR 2,000 / ~$6.50)**: String Hoppers, Coconut Rotti, or Milk Rice served with dhal curry, fish curry, egg curry, or coconut sambol, with tea or coffee.
+- **16. Tigri Special Cocktail (LKR 1,800 / ~$6.00)**: White rum, lime, sugar, orange juice, pineapple juice, and ice.
+
+## Dining Experiences
+- **Beachside Dining**: Al fresco dining tables positioned on the sand at the water's edge.
+- **Sunset Dining**: Oceanfront seating positioned for direct viewing of daily sunsets (typically occurring between 06:00 PM and 06:30 PM).
+- **Casual Beach Lunch**: Open-air setups for surfers, travelers, and groups.
+- **Oceanfront Lounge**: Beach loungers and sunbeds serving cocktails and tropical fruit drinks.
+
+## Services & Amenities
+- Beachfront outdoor seating (feet-in-the-sand tables)
+- Direct beach access with sunbeds and loungers
+- Free guest Wi-Fi
+- Credit cards accepted (Visa, Mastercard)
+- High accessibility from Galle Road
+- Takeaway service (orders accepted via Phone/WhatsApp)
+- Family-friendly and group event hosting (e.g., birthday celebrations)
+
+## Location
+- **Address**: 348, Galle Road, Hikkaduwa, Galle District, Southern Province, 80240, Sri Lanka
+- **Coordinates**: Latitude `6.138402`, Longitude `80.097011`
+- **Google Maps Location**: https://share.google/LtVgjRX3VIP4AQgZl
+- **Google Maps Directions**: https://www.google.com/maps/dir/?api=1&destination=Tigri+Beach+Restaurant+Hikkaduwa
+
+## Nearby Attractions
+- **Hikkaduwa Beach**: Located directly outside the restaurant.
+- **Hikkaduwa Coral Reef**: 2-minute walk.
+- **Turtle Beach**: 3-minute walk.
+- **Surf Point**: 5-minute walk.
+- **Snorkeling**: 2-minute walk.
+- **Diving**: 4-minute walk.
+
+## Booking Information
+- **Sunset Table Booking**: Highly recommended for beachfront tables during sunset hours.
+- **Booking Channels**: Table reservations can be requested by calling or messaging the Phone/WhatsApp number listed under Contact Information.
+
+## Frequently Asked Questions
+- **Is booking required?** Recommended for beachfront tables during sunset. Reservations can be made by calling or messaging the contact number listed under Contact Information.
+- **Are vegetarian, vegan, and gluten-free options available?** Yes, the restaurant prepares traditional Sri Lankan vegetarian and vegan curries, fresh tropical fruit salads, and customized dietary requests daily.
+- **Is parking available?** Yes, free roadside parking is available on Galle Road directly outside the restaurant, alongside space for bicycle and scooter parking.
+- **Is daily fresh seafood served?** Yes, all seafood—including lobster, crabs, tiger prawns, and reef fish—is sourced fresh daily from the local Hikkaduwa harbor.
+- **Are credit cards accepted?** Yes, Visa and Mastercard are accepted.
+
+## Business Facts
+- **Operating History**: Continuous operation since 1999 (over 25 years of service).
+- **Ownership**: Family-owned and operated locally.
+- **Google Business Rating**: 4.3★ based on 497+ reviews.
+- **TripAdvisor Rating**: 4.2★ based on 600+ reviews.
+- **Global Audience**: Serves travelers and guests from over 50 countries.
+
+## Keywords & Alternate Names
+- Tigri Beach Restaurant
+- Tigri Beach Restaurant Hikkaduwa
+- Tigri Beach Hikkaduwa
+- Tigri Beach Resturant
+
+## Structured Entity Summary
+- **Entity Type**: `LocalBusiness` -> `FoodEstablishment` -> `Restaurant`
+- **Brand**: Tigri Beach Restaurant
+- **Coordinates**: [6.138402, 80.097011]
+- **Founding Date**: 1999
+- **Sitemap**: https://tigribeach.com/sitemap.xml
+- **Robots**: https://tigribeach.com/robots.txt
+
+## Important Website Pages
+- **Home / Hero**: https://tigribeach.com/#hero
+- **About**: https://tigribeach.com/#about
+- **Menu**: https://tigribeach.com/#menu
+- **Gallery**: https://tigribeach.com/#gallery
+- **Reviews**: https://tigribeach.com/#reviews
+- **Contact & Reservations**: https://tigribeach.com/#contact
+- **FAQ**: https://tigribeach.com/#faq
+- **Food Menu (PDF)**: https://tigribeach.com/Tigri_Full_Food_Menu.pdf
+- **Drinks Menu (PDF)**: https://tigribeach.com/Tigri_Full_Drinks_Menu.pdf

@@ -99,7 +99,7 @@ export default function Footer() {
             <Link href="/#gallery" className="hover:text-primary transition-colors duration-200">Life & Gallery</Link>
             <Link href="/#reviews" className="hover:text-primary transition-colors duration-200">Reviews</Link>
             <Link href="/#contact" className="hover:text-primary transition-colors duration-200">Find Us</Link>
-            <a href="/llm.txt" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-200">AI Sitemap</a>
+            <a href="/llms.txt" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-200">AI Sitemap</a>
           </div>
         </div>
 
