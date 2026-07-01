@@ -226,23 +226,21 @@ export default function Footer() {
 
       {/* Credits & copyright */}
       <div className="max-w-7xl mx-auto px-6 border-t border-slate-200 mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-light">
-        <div className="flex flex-col gap-1 text-center sm:text-left">
-          <span>
-            © {new Date().getFullYear()} Tigri Beach Restaurant. All rights
-            reserved.
-          </span>
-          <span>
-            Powered by CYM AI • By{" "}
-            <a
-              href="https://cyoumedia.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary transition-colors duration-200 font-medium"
-            >
-              CYouMedia
-            </a>
-          </span>
-        </div>
+        <span>
+          © {new Date().getFullYear()} Tigri Beach Restaurant. All rights
+          reserved.
+        </span>
+        <span className="text-center">
+          Powered by CYM AI • By{" "}
+          <a
+            href="https://cyoumedia.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors duration-200 font-medium"
+          >
+            CYouMedia
+          </a>
+        </span>
         <div className="flex gap-6">
           <Link
             href="/#about"
