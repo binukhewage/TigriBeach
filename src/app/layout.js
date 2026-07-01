@@ -19,6 +19,9 @@ export const metadata = {
   description: "Dine with your feet in the sand at Hikkaduwa's premier beachfront seafood restaurant. Enjoy fresh lobster, lagoon crab, traditional Sri Lankan curries, and stunning tropical sunsets since 1999.",
   keywords: [
     "Tigri Beach Hikkaduwa",
+    "TigriBeach",
+    "TigriBeach Hikkaduwa",
+    "TigriBeach Restaurant",
     "Hikkaduwa seafood restaurant",
     "beachfront restaurant Hikkaduwa",
     "fresh lobster Hikkaduwa",
@@ -85,7 +88,7 @@ export default function RootLayout({ children }) {
       "@type": ["Restaurant", "LocalBusiness", "FoodEstablishment"],
       "@id": "https://tigribeach.com/#restaurant",
       "name": "Tigri Beach Restaurant",
-      "alternateName": ["Tigri Beach", "Tigri Beach Hikkaduwa"],
+      "alternateName": ["Tigri Beach", "Tigri Beach Hikkaduwa", "TigriBeach", "TigriBeach Hikkaduwa"],
       "description": "Tigri Beach Restaurant is Hikkaduwa's premier oceanfront seafood restaurant, located directly on the beach at 348 Galle Road. Established in 1999, we serve daily-caught lobster, lagoon crab, tiger prawns, and traditional Sri Lankan curries with feet-in-the-sand beachfront dining and stunning Indian Ocean sunset views.",
       "url": "https://tigribeach.com",
       "telephone": "+94771048202",

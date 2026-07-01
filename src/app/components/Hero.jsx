@@ -33,8 +33,8 @@ export default function Hero() {
             <div className="absolute -top-24 w-[660px] h-[660px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.22)] group-hover:scale-105 group-hover:rotate-[8deg] transition-all duration-700 ease-out">
               <Image
                 src="/h7.png"
-                alt="Tigri Beach Restaurant fresh seafood and kebab platter"
-                title="Tigri Beach Grilled Seafood Kebabs"
+                alt="Fresh Sri Lankan crab served at Tigri Beach Restaurant, Hikkaduwa"
+title="Sri Lankan Mud Crab Signature Dish"
                 fill
                 priority
                 sizes="320px"
@@ -89,8 +89,8 @@ export default function Hero() {
               <div className="absolute -top-16 w-[420px] h-[420px] drop-shadow-[0_12px_25px_rgba(0,0,0,0.2)] hover:scale-105 hover:rotate-[6deg] transition-all duration-500 ease-out">
                 <Image
                   src="/h2.png"
-                  alt="Featured salad dish with fresh tropical greens"
-                  title="Tigri Beach Featured Fresh Salad"
+                  alt="Fresh grilled lobster served at Tigri Beach Restaurant, Hikkaduwa, Sri Lanka"
+title="Signature Grilled Lobster at Tigri Beach"
                   fill
                   priority
                   sizes="230px"
