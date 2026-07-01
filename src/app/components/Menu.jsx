@@ -162,8 +162,9 @@ export default function Menu() {
           {/* Left: Dishes List */}
           <div className="col-span-1 lg:col-span-7 flex flex-col gap-6 min-h-[400px]">
             {menuItems[activeCategory].map((item, index) => (
-              <div
+              <article
                 key={item.name}
+                aria-label={`Menu Item: ${item.name}`}
                 className="glassmorphism-card p-6 md:p-8 rounded-2xl flex flex-col gap-3 relative overflow-hidden animate-[fadeInUp_0.5s_ease-out]"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
@@ -205,7 +206,7 @@ export default function Menu() {
                     ))}
                   </div>
                 )}
-              </div>
+              </article>
             ))}
           </div>
 
@@ -213,7 +214,7 @@ export default function Menu() {
           <div className="col-span-1 lg:col-span-5 h-full lg:sticky lg:top-28 flex flex-col gap-6 animate-scroll-right">
             
             {/* The Experience Card */}
-            <div className="glassmorphism-card p-4 rounded-3xl overflow-hidden flex flex-col gap-4">
+            <article aria-label="Featured Showcase: Tigri Special Full Plate" className="glassmorphism-card p-4 rounded-3xl overflow-hidden flex flex-col gap-4">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-100">
                 <Image
                   src="/seafood_platter.jpg"
@@ -247,10 +248,10 @@ export default function Menu() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </article>
 
             {/* Premium Download PDF Card */}
-            <div className="glassmorphism-card p-6 rounded-3xl border border-slate-200/80 shadow-lg bg-white text-slate-900 flex flex-col gap-4 relative overflow-hidden">
+            <article aria-label="Download Full Menus" className="glassmorphism-card p-6 rounded-3xl border border-slate-200/80 shadow-lg bg-white text-slate-900 flex flex-col gap-4 relative overflow-hidden">
               {/* Decorative backgrounds */}
               <div className="absolute -top-12 -right-12 w-32 h-32 bg-primary/5 rounded-full blur-[40px] pointer-events-none" />
               <div className="absolute -bottom-12 -left-12 w-24 h-24 bg-accent/5 rounded-full blur-[30px] pointer-events-none" />
@@ -286,7 +287,7 @@ export default function Menu() {
                   Drinks Menu
                 </a>
               </div>
-            </div>
+            </article>
 
           </div>
 

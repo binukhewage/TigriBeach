@@ -76,10 +76,11 @@ export default function FAQ() {
           {faqs.map((faq, index) => {
             const isOpen = activeIndex === index;
             return (
-              <div
+              <article
                 key={index}
                 itemScope
                 itemType="https://schema.org/Question"
+                aria-label={`Frequently Asked Question: ${faq.question}`}
                 className="bg-slate-50/50 hover:bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 hover:border-primary/20 transition-all duration-300"
               >
                 {/* Accordion Trigger */}
@@ -128,7 +129,7 @@ export default function FAQ() {
                     <p itemProp="text">{faq.answer}</p>
                   </div>
                 </div>
-              </div>
+              </article>
             );
           })}
         </div>

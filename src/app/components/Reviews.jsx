@@ -347,7 +347,10 @@ function ReviewCard({ rev }) {
   const isTripAdvisor = rev.source.includes("TripAdvisor");
   
   return (
-    <div className="glassmorphism-card p-6 md:p-8 rounded-3xl w-[320px] md:w-[380px] shrink-0 flex flex-col justify-between select-none">
+    <article
+      aria-label={`Review by ${rev.author} from ${rev.source}`}
+      className="glassmorphism-card p-6 md:p-8 rounded-3xl w-[320px] md:w-[380px] shrink-0 flex flex-col justify-between select-none"
+    >
       <div className="flex flex-col gap-4">
         {/* Header info */}
         <div className="flex items-center justify-between border-b border-slate-100 pb-4">
@@ -402,6 +405,6 @@ function ReviewCard({ rev }) {
           "{rev.text}"
         </blockquote>
       </div>
-    </div>
+    </article>
   );
 }

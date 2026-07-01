@@ -30,7 +30,7 @@ export default function Contact() {
           <div className="col-span-1 lg:col-span-5 flex flex-col gap-6 justify-between">
             
             {/* Location & Address Card */}
-            <div className="glassmorphism-card p-6 md:p-8 rounded-3xl flex items-start gap-4">
+            <article aria-label="Physical Address" className="glassmorphism-card p-6 md:p-8 rounded-3xl flex items-start gap-4">
               <div className="p-3.5 rounded-2xl bg-primary/10 border border-primary/20 text-primary shrink-0">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -48,10 +48,10 @@ export default function Contact() {
                   Right on the beachfront
                 </span>
               </div>
-            </div>
+            </article>
 
             {/* Contact Details & WhatsApp Booking Card */}
-            <div className="glassmorphism-card p-6 md:p-8 rounded-3xl flex flex-col gap-6">
+            <article aria-label="Contact Channels" className="glassmorphism-card p-6 md:p-8 rounded-3xl flex flex-col gap-6">
               <div className="flex items-start gap-4">
                 <div className="p-3.5 rounded-2xl bg-primary/10 border border-primary/20 text-primary shrink-0">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,10 +88,10 @@ export default function Contact() {
                   Book Table on WhatsApp
                 </a>
               </div>
-            </div>
+            </article>
 
             {/* Opening Hours Card */}
-            <div className="glassmorphism-card p-6 md:p-8 rounded-3xl flex items-start gap-4">
+            <article aria-label="Opening Hours" className="glassmorphism-card p-6 md:p-8 rounded-3xl flex items-start gap-4">
               <div className="p-3.5 rounded-2xl bg-primary/10 border border-primary/20 text-primary shrink-0">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -109,10 +109,10 @@ export default function Contact() {
                   </span>
                 </div>
               </div>
-            </div>
+            </article>
 
             {/* Explore Nearby Card */}
-            <div className="glassmorphism-card p-6 md:p-8 rounded-3xl flex items-start gap-4">
+            <article aria-label="Nearby Attractions" className="glassmorphism-card p-6 md:p-8 rounded-3xl flex items-start gap-4">
               <div className="p-3.5 rounded-2xl bg-accent/10 border border-accent/20 text-accent shrink-0">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -148,13 +148,13 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
           </div>
 
           {/* Right Column: Google Maps Embed Card */}
           <div className="col-span-1 lg:col-span-7 flex flex-col justify-between">
-            <div className="glassmorphism-card p-4 rounded-3xl flex flex-col gap-4 border border-slate-200 bg-white h-full justify-between">
+            <article aria-label="Google Maps Location" className="glassmorphism-card p-4 rounded-3xl flex flex-col gap-4 border border-slate-200 bg-white h-full justify-between">
               
               {/* Map Container */}
               <div className="w-full flex-1 aspect-[16/10] lg:aspect-auto min-h-[300px] lg:h-[450px] rounded-2xl overflow-hidden shadow-inner border border-slate-100 relative">
@@ -193,7 +193,7 @@ export default function Contact() {
                 </a>
               </div>
 
-            </div>
+            </article>
           </div>
 
         </div>

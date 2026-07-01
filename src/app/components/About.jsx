@@ -78,7 +78,7 @@ export default function About() {
 
           {/* Key Vibe Badges */}
           <div className="grid grid-cols-2 gap-6 mt-2 pt-6 border-t border-slate-100">
-            <div className="flex items-start gap-4">
+            <article aria-label="Feature: 100% Beachfront" className="flex items-start gap-4">
               <div className="p-3 rounded-xl bg-primary/5 border border-primary/10 text-primary">
                 <svg
                   className="w-5 h-5"
@@ -102,9 +102,9 @@ export default function About() {
                   Dine right on the sand with full ocean vistas.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <div className="flex items-start gap-4">
+            <article aria-label="Feature: Daily Catch" className="flex items-start gap-4">
               <div className="p-3 rounded-xl bg-accent/5 border border-accent/10 text-accent">
                 <svg
                   className="w-5 h-5"
@@ -128,7 +128,7 @@ export default function About() {
                   Zero-mile sourcing from local Hikkaduwa boats.
                 </p>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
