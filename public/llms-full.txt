@@ -1,12 +1,11 @@
 # Tigri Beach Restaurant
 
 ## Overview
-Tigri Beach Restaurant is a beachfront restaurant located on Hikkaduwa Beach along Galle Road, Southern Province, Sri Lanka. Established in 1999, the family-owned establishment specializes in daily-sourced seafood and traditional Sri Lankan cuisine, serving travelers, surfers, and local guests.
+Tigri Beach Restaurant is a beachfront restaurant located on Hikkaduwa Beach along Galle Road, Southern Province, Sri Lanka. The family-owned establishment specializes in daily-sourced seafood and traditional Sri Lankan cuisine, serving travelers, surfers, and local guests.
 
 ## Business Information
 - **Official Brand Name**: Tigri Beach Restaurant (also referred to as Tigri Beach Restaurant Hikkaduwa)
 - **Domain**: https://tigribeach.com
-- **Established Year**: 1999
 - **Price Range**: Moderate (LKR 3,000 - 9,000 per person)
 - **Payment Methods**: Visa, Mastercard, and Cash (LKR, USD, EUR)
 - **Sourcing Policy**: Daily catches purchased directly from local Hikkaduwa fishermen at the harbor each morning.
@@ -78,7 +77,7 @@ Tigri Beach Restaurant is a beachfront restaurant located on Hikkaduwa Beach alo
 - **Are credit cards accepted?** Yes, Visa and Mastercard are accepted.
 
 ## Business Facts
-- **Operating History**: Continuous operation since 1999 (over 25 years of service).
+- **Operating History**: Continuous operation.
 - **Ownership**: Family-owned and operated locally.
 - **Google Business Rating**: 4.3★ based on 497+ reviews.
 - **TripAdvisor Rating**: 4.2★ based on 600+ reviews.
@@ -94,7 +93,6 @@ Tigri Beach Restaurant is a beachfront restaurant located on Hikkaduwa Beach alo
 - **Entity Type**: `LocalBusiness` -> `FoodEstablishment` -> `Restaurant`
 - **Brand**: Tigri Beach Restaurant
 - **Coordinates**: [6.138402, 80.097011]
-- **Founding Date**: 1999
 - **Sitemap**: https://tigribeach.com/sitemap.xml
 - **Robots**: https://tigribeach.com/robots.txt
 

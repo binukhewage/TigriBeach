@@ -28,7 +28,7 @@ export default function Footer() {
             </span>
           </Link>
           <p className="text-xs md:text-sm font-light text-slate-600 leading-relaxed max-w-sm mt-2">
-            Providing authentic beachside seafood dining experiences since 1999.
+            Providing authentic beachside seafood dining experiences.
             Dine on the sand, watch the sunset, and experience local Ceylonese
             hospitality.
           </p>

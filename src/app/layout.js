@@ -16,11 +16,10 @@ const outfit = Outfit({
 export const metadata = {
   metadataBase: new URL('https://tigribeach.com'),
   title: "Tigri Beach Restaurant | Fresh Seafood & Sunset Vibe Hikkaduwa",
-  description: "Dine with your feet in the sand at Hikkaduwa's premier beachfront seafood restaurant. Enjoy fresh lobster, lagoon crab, traditional Sri Lankan curries, and stunning tropical sunsets since 1999.",
+  description: "Dine with your feet in the sand at Hikkaduwa's premier beachfront seafood restaurant. Enjoy fresh lobster, lagoon crab, traditional Sri Lankan curries, and stunning tropical sunsets.",
   keywords: [
     "Tigri Beach Hikkaduwa",
     "TigriBeach",
-    "TigriBeach Hikkaduwa",
     "TigriBeach Restaurant",
     "Hikkaduwa seafood restaurant",
     "beachfront restaurant Hikkaduwa",
@@ -35,7 +34,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Tigri Beach Restaurant | Fresh Seafood & Sunset Vibe Hikkaduwa",
-    description: "Enjoy fresh, daily-caught seafood, signature cocktails, and unmatched beachfront views in Hikkaduwa, Sri Lanka. Est. 1999.",
+    description: "Enjoy fresh, daily-caught seafood, signature cocktails, and beachfront views in Hikkaduwa, Sri Lanka.",
     url: "https://tigribeach.com/",
     siteName: "Tigri Beach Restaurant",
     images: [
@@ -52,7 +51,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tigri Beach Restaurant | Fresh Seafood & Sunset Vibe Hikkaduwa",
-    description: "Enjoy fresh, daily-caught seafood, signature cocktails, and unmatched beachfront views in Hikkaduwa, Sri Lanka. Est. 1999.",
+    description: "Enjoy fresh, daily-caught seafood, signature cocktails, and beachfront views in Hikkaduwa, Sri Lanka.",
     images: {
       url: "https://tigribeach.com/hero_beach.jpg",
       alt: "Tigri Beach Restaurant Sunset Dining in Hikkaduwa",
@@ -89,11 +88,10 @@ export default function RootLayout({ children }) {
       "@id": "https://tigribeach.com/#restaurant",
       "name": "Tigri Beach Restaurant",
       "alternateName": ["Tigri Beach", "Tigri Beach Hikkaduwa", "TigriBeach", "TigriBeach Hikkaduwa"],
-      "description": "Tigri Beach Restaurant is Hikkaduwa's premier oceanfront seafood restaurant, located directly on the beach at 348 Galle Road. Established in 1999, we serve daily-caught lobster, lagoon crab, tiger prawns, and traditional Sri Lankan curries with feet-in-the-sand beachfront dining and stunning Indian Ocean sunset views.",
+      "description": "Tigri Beach Restaurant is Hikkaduwa's premier oceanfront seafood restaurant, located directly on the beach at 348 Galle Road. We serve daily-caught lobster, lagoon crab, tiger prawns, and traditional Sri Lankan curries with feet-in-the-sand beachfront dining and stunning Indian Ocean sunset views.",
       "url": "https://tigribeach.com",
       "telephone": "+94771048202",
       "email": "info@tigribeach.com",
-      "foundingDate": "1999",
       "priceRange": "$$",
       "servesCuisine": ["Seafood", "Sri Lankan", "International", "Ceylonese"],
       "currenciesAccepted": "LKR, USD, EUR",
@@ -280,7 +278,7 @@ export default function RootLayout({ children }) {
           "name": "What makes Tigri Beach the best seafood restaurant in Hikkaduwa?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tigri Beach Restaurant sources seafood fresh daily directly from local Hikkaduwa fishermen at the harbour. Located right on the beachfront at 348 Galle Road, guests enjoy signature dishes like fresh grilled lobster, lagoon crab curry, jumbo tiger prawns, and local Sri Lankan fish curries with their feet in the sand, accompanied by spectacular Indian Ocean sunsets. Established in 1999, we have 4.3 stars on Google (497 reviews) and 4.2 stars on TripAdvisor (604 reviews)."
+            "text": "Tigri Beach Restaurant sources seafood fresh daily directly from local Hikkaduwa fishermen at the harbour. Located right on the beachfront at 348 Galle Road, guests enjoy signature dishes like fresh grilled lobster, lagoon crab curry, jumbo tiger prawns, and local Sri Lankan fish curries with their feet in the sand, accompanied by spectacular Indian Ocean sunsets. We have 4.3 stars on Google (497 reviews) and 4.2 stars on TripAdvisor (604 reviews)."
           }
         },
         {
@@ -339,7 +337,7 @@ export default function RootLayout({ children }) {
       "@id": "https://tigribeach.com/#website",
       "url": "https://tigribeach.com",
       "name": "Tigri Beach Restaurant",
-      "description": "Official website of Tigri Beach Restaurant — Hikkaduwa's premier beachfront seafood dining destination since 1999.",
+      "description": "Official website of Tigri Beach Restaurant — Hikkaduwa's premier beachfront seafood dining destination.",
       "publisher": {
         "@id": "https://tigribeach.com/#restaurant"
       },

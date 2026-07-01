@@ -42,10 +42,10 @@ export default function About() {
             {/* Experience Callout Card */}
             <div className="glassmorphism rounded-2xl p-4 md:p-6 flex flex-col justify-center items-center text-center shadow-md border border-slate-100">
               <span className="font-serif text-3xl md:text-4xl font-extrabold text-primary glow-text-amber leading-none">
-                25+
+                100%
               </span>
               <span className="text-[9px] md:text-[10px] uppercase font-bold tracking-[0.2em] text-slate-500 mt-2">
-                Years of Fresh Catches
+                Daily Harbor Catches
               </span>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function About() {
 
           <div className="flex flex-col gap-6 text-sm md:text-base text-slate-600 font-light leading-relaxed animate-scroll-fade">
             <p>
-              Tigri Beach Restaurant is located directly on the sun-drenched shores of Hikkaduwa Beach along Galle Road, Southern Province, Sri Lanka. Since our founding in 1999, we have welcomed travelers, surfers, and food enthusiasts from all over the world. What started as a humble, family-operated kitchen has grown over the past quarter-century into a coastal culinary landmark. Nestled in a prime oceanfront spot, the restaurant offers direct views of the Indian Ocean, where the cool ocean breeze and the soothing sound of the waves create a tranquil backdrop for an unforgettable dining experience.
+              Tigri Beach Restaurant is located directly on the sun-drenched shores of Hikkaduwa Beach along Galle Road, Southern Province, Sri Lanka. We welcome travelers, surfers, and food enthusiasts from all over the world. What started as a humble, family-operated kitchen has grown into a coastal culinary landmark. Nestled in a prime oceanfront spot, the restaurant offers direct views of the Indian Ocean, where the cool ocean breeze and the soothing sound of the waves create a tranquil backdrop for an unforgettable dining experience.
             </p>
             
             <p>

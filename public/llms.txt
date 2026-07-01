@@ -1,12 +1,11 @@
 # Tigri Beach Restaurant
 
-A beachfront seafood restaurant located on Hikkaduwa Beach in Hikkaduwa, Sri Lanka, established in 1999. The family-owned establishment specializes in daily harbor-sourced seafood and traditional Sri Lankan cuisine.
+A beachfront seafood restaurant located on Hikkaduwa Beach in Hikkaduwa, Sri Lanka. The family-owned establishment specializes in daily harbor-sourced seafood and traditional Sri Lankan cuisine.
 
 ## Business Details
 - **Official Name**: Tigri Beach Restaurant
 - **Website**: https://tigribeach.com
 - **Detailed Profile**: https://tigribeach.com/llms-full.txt
-- **Established**: 1999
 
 ## Contact Information
 - **Phone Number**: +94 77 104 8202
