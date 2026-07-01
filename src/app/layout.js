@@ -81,333 +81,392 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const schemaArray = [
-    {
-      "@context": "https://schema.org",
-      "@type": ["Restaurant", "LocalBusiness", "FoodEstablishment"],
-      "@id": "https://tigribeach.com/#restaurant",
-      "name": "Tigri Beach Restaurant",
-      "alternateName": ["Tigri Beach", "Tigri Beach Hikkaduwa", "TigriBeach", "TigriBeach Hikkaduwa"],
-      "description": "Tigri Beach Restaurant is Hikkaduwa's premier oceanfront seafood restaurant, located directly on the beach at 348 Galle Road. We serve daily-caught lobster, lagoon crab, tiger prawns, and traditional Sri Lankan curries with feet-in-the-sand beachfront dining and stunning Indian Ocean sunset views.",
-      "url": "https://tigribeach.com",
-      "telephone": "+94771048202",
-      "email": "info@tigribeach.com",
-      "priceRange": "$$",
-      "servesCuisine": ["Seafood", "Sri Lankan", "International", "Ceylonese"],
-      "currenciesAccepted": "LKR, USD, EUR",
-      "paymentAccepted": "Cash, Visa, Mastercard",
-      "hasMap": "https://www.google.com/maps/dir/?api=1&destination=Tigri+Beach+Restaurant+Hikkaduwa",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://tigribeach.com/logo.png",
-        "width": 200,
-        "height": 60
+  const schemaGraph = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://tigribeach.com/#organization",
+        "name": "Tigri Beach Restaurant",
+        "url": "https://tigribeach.com",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://tigribeach.com/#logo",
+          "url": "https://tigribeach.com/logoonly.png",
+          "caption": "Tigri Beach Restaurant Logo"
+        },
+        "sameAs": [
+          "https://www.instagram.com/tigri.beach/",
+          "https://www.facebook.com/TigriTours/",
+          "https://www.tripadvisor.com/Restaurant_Review-g304134-d4778071-Reviews-Tigri_Beach_Resturant-Hikkaduwa_Galle_District_Southern_Province.html"
+        ]
       },
-      "image": [
-        "https://tigribeach.com/hero_beach.jpg",
-        "https://tigribeach.com/seafood_platter.jpg",
-        "https://tigribeach.com/about1.png",
-        "https://tigribeach.com/ssdine.jpg"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "348 Galle Road",
-        "addressLocality": "Hikkaduwa",
-        "addressRegion": "Southern Province",
-        "postalCode": "80240",
-        "addressCountry": "LK"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 6.138402,
-        "longitude": 80.097011
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday", "Tuesday", "Wednesday", "Thursday",
-            "Friday", "Saturday", "Sunday"
-          ],
-          "opens": "09:30",
-          "closes": "23:00"
+      {
+        "@type": ["Restaurant", "LocalBusiness", "FoodEstablishment"],
+        "@id": "https://tigribeach.com/#restaurant",
+        "parentOrganization": { "@id": "https://tigribeach.com/#organization" },
+        "name": "Tigri Beach Restaurant",
+        "alternateName": ["Tigri Beach", "Tigri Beach Hikkaduwa", "TigriBeach", "TigriBeach Hikkaduwa"],
+        "description": "Tigri Beach Restaurant is Hikkaduwa's premier oceanfront seafood restaurant, located directly on the beach at 348 Galle Road. We serve daily-caught lobster, lagoon crab, tiger prawns, and traditional Sri Lankan curries with feet-in-the-sand beachfront dining and stunning Indian Ocean sunset views.",
+        "url": "https://tigribeach.com",
+        "telephone": "+94771048202",
+        "priceRange": "$$",
+        "servesCuisine": ["Seafood", "Sri Lankan", "International"],
+        "image": [
+          {
+            "@type": "ImageObject",
+            "@id": "https://tigribeach.com/#image-hero",
+            "url": "https://tigribeach.com/hero_beach.jpg",
+            "caption": "Tigri Beach Restaurant Sunset Dining in Hikkaduwa"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://tigribeach.com/#image-seafood",
+            "url": "https://tigribeach.com/seafood_platter.jpg",
+            "caption": "Tigri Special Seafood Platter"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://tigribeach.com/#image-about",
+            "url": "https://tigribeach.com/about1.png",
+            "caption": "Golden hour beachfront dining at Hikkaduwa Sri Lanka"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://tigribeach.com/#image-dining",
+            "url": "https://tigribeach.com/ssdine.jpg",
+            "caption": "Beachfront table setup at Tigri Beach Hikkaduwa"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "@id": "https://tigribeach.com/#postaladdress",
+          "streetAddress": "348 Galle Road",
+          "addressLocality": "Hikkaduwa",
+          "addressRegion": "Southern Province",
+          "postalCode": "80240",
+          "addressCountry": "LK"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "@id": "https://tigribeach.com/#geocoordinates",
+          "latitude": 6.138402,
+          "longitude": 80.097011
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday", "Tuesday", "Wednesday", "Thursday",
+              "Friday", "Saturday", "Sunday"
+            ],
+            "opens": "09:30",
+            "closes": "23:00"
+          }
+        ],
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Beachfront Seating", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Outdoor Seating", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Reservations", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Table Service", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Alcohol Served", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Takeaway Available", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Family Friendly", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Good for Couples", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Good for Groups", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true }
+        ],
+        "hasMenu": {
+          "@type": "Menu",
+          "@id": "https://tigribeach.com/#menu-schema",
+          "name": "Tigri Beach Restaurant Menu",
+          "url": "https://tigribeach.com/#menu",
+          "inLanguage": "en-US",
+          "offers": {
+            "@type": "Offer",
+            "priceRange": "$$ (LKR 3,000 - 9,000 per person)"
+          },
+          "hasMenuSection": [
+            {
+              "@type": "MenuSection",
+              "@id": "https://tigribeach.com/#menu-section-seafood",
+              "name": "Tigri Special Seafood",
+              "description": "Daily caught fresh seafood specialties",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Tigri Special Full Plate",
+                  "description": "Our signature seafood feast featuring prawns, jumbo prawns, tiger prawns, calamari, crabs, lobster, and full fish. Cooked with lime, fresh tomato sauce, and garlic butter. Serves 2.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "14000",
+                    "priceCurrency": "LKR"
+                  }
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "01. Tigri Special Full Fish",
+                  "description": "Served with chips and salad (For One Person). Your choice of Dorado, Barracuda, or Coral Fish, cooked with fresh tomato, ginger, lime, and garlic butter sauce.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "3000",
+                    "priceCurrency": "LKR"
+                  }
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "02. Tigri Special Mix Prawns",
+                  "description": "Served with chips and salad (For One Person). Jumbo prawns and tiger prawns cooked with fresh tomato, ginger and lime.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "5000",
+                    "priceCurrency": "LKR"
+                  }
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "03. Tigri Special Crabs",
+                  "description": "Served with chips and salad (For One Person). Fresh crabs cooked with Tigri Special Mix Sauce.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "8500",
+                    "priceCurrency": "LKR"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "@id": "https://tigribeach.com/#menu-section-breakfast",
+              "name": "Breakfast",
+              "description": "Hearty local and international breakfast options",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "07. Breakfast",
+                  "description": "Pot of tea or coffee, egg (boiled, fried or scrambled), toast with butter and jam, slice of cheese and fruit juice.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "2000",
+                    "priceCurrency": "LKR"
+                  }
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "08. Sri Lankan Breakfast",
+                  "description": "Pot of tea or coffee with String Hoppers, Coconut Rotti or Milk Rice served with dhal curry, fish curry, egg curry, fried egg or coconut sambol.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "2000",
+                    "priceCurrency": "LKR"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "@id": "https://tigribeach.com/#menu-section-drinks",
+              "name": "Drinks",
+              "description": "Refreshing mocktails and cocktails",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "13. Virgin Mojito",
+                  "description": "Fresh mint, lime, ice and soda.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "1200",
+                    "priceCurrency": "LKR"
+                  }
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "14. Pineapple Mojito",
+                  "description": "Mint, pineapple juice, soda, lime and ice.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "1200",
+                    "priceCurrency": "LKR"
+                  }
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "16. Tigri Special Cocktail",
+                  "description": "White rum, lime, sugar, orange juice, pineapple juice and ice.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "1800",
+                    "priceCurrency": "LKR"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "acceptsReservations": true,
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "@id": "https://tigribeach.com/#aggregaterating",
+          "ratingValue": "4.3",
+          "reviewCount": "497",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "@id": "https://tigribeach.com/#review-sarah-jenkins",
+            "itemReviewed": { "@id": "https://tigribeach.com/#restaurant" },
+            "author": { "@type": "Person", "name": "Sarah Jenkins" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "datePublished": "2026-06-17",
+            "reviewBody": "Best seafood platter in Hikkaduwa by far! Everything was incredibly fresh, the portions were generous, and eating right on the sand at sunset was unforgettable."
+          },
+          {
+            "@type": "Review",
+            "@id": "https://tigribeach.com/#review-michael-vanderberg",
+            "itemReviewed": { "@id": "https://tigribeach.com/#restaurant" },
+            "author": { "@type": "Person", "name": "Michael Van Der Berg" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "datePublished": "2026-06-01",
+            "reviewBody": "The traditional Sri Lankan crab curry here is a masterpiece. Bursting with authentic spices and cooked to perfection. Make sure to book a front beach table for the sunset views!"
+          },
+          {
+            "@type": "Review",
+            "@id": "https://tigribeach.com/#review-emma-watson",
+            "itemReviewed": { "@id": "https://tigribeach.com/#restaurant" },
+            "author": { "@type": "Person", "name": "Emma Watson" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "datePublished": "2026-06-26",
+            "reviewBody": "An absolute must-visit in Hikkaduwa! The cocktails are superb, especially the Arrack Sour. Outstanding service and feet-in-the-sand dining."
+          }
+        ],
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://wa.me/94771048202?text=Hi%20Tigri%20Beach!%20I'd%20like%20to%20reserve%20a%20table",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Table Reservation at Tigri Beach Restaurant"
+          }
         }
-      ],
-      "amenityFeature": [
-        { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Beachfront Seating", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Outdoor Seating", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Reservations", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Table Service", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Alcohol Served", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Takeaway Available", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Family Friendly", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Good for Couples", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Good for Groups", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Wheelchair Accessible", "value": true }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Tigri Beach Menu",
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://tigribeach.com/#website",
+        "url": "https://tigribeach.com/",
+        "name": "Tigri Beach Restaurant",
+        "description": "Official website of Tigri Beach Restaurant — Hikkaduwa's beachfront seafood dining destination.",
+        "publisher": { "@id": "https://tigribeach.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://tigribeach.com/#webpage",
+        "url": "https://tigribeach.com/",
+        "name": "Tigri Beach Restaurant | Fresh Seafood & Sunset Vibe Hikkaduwa",
+        "isPartOf": { "@id": "https://tigribeach.com/#website" },
+        "about": { "@id": "https://tigribeach.com/#restaurant" },
+        "primaryImageOfPage": { "@id": "https://tigribeach.com/#image-hero" },
+        "description": "Dine with your feet in the sand at Hikkaduwa's premier beachfront seafood restaurant. Enjoy fresh lobster, lagoon crab, traditional Sri Lankan curries, and stunning tropical sunsets.",
+        "inLanguage": "en-US",
+        "breadcrumb": { "@id": "https://tigribeach.com/#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tigribeach.com/#breadcrumb",
         "itemListElement": [
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "MenuItem",
-              "name": "Tigri Seafood Platter",
-              "description": "Fresh lobster, lagoon crab, tiger prawns, calamari, and catch-of-the-day reef fish, served with garlic herb butter, fries, and salad. Serves 2.",
-              "image": "https://tigribeach.com/seafood_platter.jpg",
-              "nutrition": {
-                "@type": "NutritionInformation",
-                "servingSize": "Serves 2"
-              }
-            },
-            "price": "14500",
-            "priceCurrency": "LKR"
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tigribeach.com/"
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "MenuItem",
-              "name": "Jumbo Garlic Butter Tiger Prawns",
-              "description": "Huge tiger prawns grilled on order, tossed in sizzling clarified butter, roasted garlic, and parsley."
-            },
-            "price": "6200",
-            "priceCurrency": "LKR"
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Menu",
+            "item": "https://tigribeach.com/#menu"
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "MenuItem",
-              "name": "Butter-Rosemary Grilled Snapper",
-              "description": "Whole red snapper pan-seared with fresh rosemary sprigs, garlic cloves, and lemon juice over hot coals.",
-              "suitableForDiet": "https://schema.org/GlutenFreeDiet"
-            },
-            "price": "5800",
-            "priceCurrency": "LKR"
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Contact & Reservations",
+            "item": "https://tigribeach.com/#contact"
           }
         ]
       },
-      "menu": "https://tigribeach.com/#menu",
-      "acceptsReservations": true,
-      "reservationUrl": "https://wa.me/94771048202?text=Hi%20Tigri%20Beach!%20I'd%20like%20to%20reserve%20a%20table",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.3",
-        "reviewCount": "497",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Sarah Jenkins" },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "datePublished": "2026-06-13",
-          "reviewBody": "Best seafood platter in Hikkaduwa by far! Everything was incredibly fresh, the portions were generous, and eating right on the sand at sunset was unforgettable.",
-          "publisher": { "@type": "Organization", "name": "Google" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Michael Van Der Berg" },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "datePublished": "2026-05-27",
-          "reviewBody": "The traditional Sri Lankan crab curry here is a masterpiece. Bursting with authentic spices and cooked to perfection. Make sure to book a front beach table for the sunset views!",
-          "publisher": { "@type": "Organization", "name": "TripAdvisor" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Emma Watson" },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "datePublished": "2026-06-22",
-          "reviewBody": "An absolute must-visit in Hikkaduwa! The cocktails are superb, especially the Arrack Sour. Outstanding service and feet-in-the-sand dining.",
-          "publisher": { "@type": "Organization", "name": "TripAdvisor" }
-        }
-      ],
-      "sameAs": [
-        "https://www.instagram.com/tigri.beach/",
-        "https://www.facebook.com/TigriTours/",
-        "https://www.tripadvisor.com/Restaurant_Review-g304134-d4778071-Reviews-Tigri_Beach_Resturant-Hikkaduwa_Galle_District_Southern_Province.html",
-        "https://maps.app.goo.gl/tigribeach"
-      ],
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Hikkaduwa",
-          "sameAs": [
-            "https://en.wikipedia.org/wiki/Hikkaduwa",
-            "https://www.wikidata.org/wiki/Q1618065"
-          ]
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Southern Province",
-          "sameAs": [
-            "https://en.wikipedia.org/wiki/Southern_Province",
-            "https://www.wikidata.org/wiki/Q4533929"
-          ]
-        }
-      ],
-      "knowsAbout": [
-        "https://en.wikipedia.org/wiki/International",
-        "https://www.wikidata.org/wiki/Q2292662",
-        "https://en.wikipedia.org/wiki/International_cuisine",
-        "https://en.wikipedia.org/wiki/Sri_Lankan",
-        "https://www.wikidata.org/wiki/Q7586008",
-        "https://en.wikipedia.org/wiki/Sri_Lankan_cuisine",
-        "https://www.wikidata.org/wiki/Q2234037"
-      ],
-      "keywords": [
-        "Hikkaduwa seafood restaurant",
-        "beachfront dining Hikkaduwa",
-        "fresh lobster Sri Lanka",
-        "sunset restaurant Hikkaduwa",
-        "lagoon crab Hikkaduwa",
-        "Galle Road restaurant",
-        "Sri Lanka beach dining",
-        "best restaurant Hikkaduwa"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What makes Tigri Beach the best seafood restaurant in Hikkaduwa?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tigri Beach Restaurant sources seafood fresh daily directly from local Hikkaduwa fishermen at the harbour. Located right on the beachfront at 348 Galle Road, guests enjoy signature dishes like fresh grilled lobster, lagoon crab curry, jumbo tiger prawns, and local Sri Lankan fish curries with their feet in the sand, accompanied by spectacular Indian Ocean sunsets. We have 4.3 stars on Google (497 reviews) and 4.2 stars on TripAdvisor (604 reviews)."
+      {
+        "@type": "FAQPage",
+        "@id": "https://tigribeach.com/#faqpage",
+        "isPartOf": { "@id": "https://tigribeach.com/#webpage" },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What makes Tigri Beach the best seafood restaurant in Hikkaduwa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tigri Beach Restaurant sources seafood fresh daily directly from local Hikkaduwa fishermen at the harbour. Located right on the beachfront at 348 Galle Road, guests enjoy signature dishes like fresh grilled lobster, lagoon crab curry, jumbo tiger prawns, and local Sri Lankan fish curries with their feet in the sand, accompanied by spectacular Indian Ocean sunsets. We have 4.3 stars on Google (497 reviews) and 4.2 stars on TripAdvisor (604 reviews)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is Tigri Beach Restaurant located in Hikkaduwa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tigri Beach Restaurant is located at 348 Galle Road, Hikkaduwa, Southern Province, Sri Lanka (GPS: 6.138402, 80.097011). We are situated directly on the Hikkaduwa beachfront, opposite the Galle Road main entrance. Steps from Hikkaduwa Coral Reef (2 min), Turtle Beach (3 min), and the main surf break (5 min)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are Tigri Beach Restaurant's opening hours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are open daily from 09:30 AM to 11:00 PM (Sri Lanka Time, GMT+5:30), seven days a week including public holidays. We serve breakfast, lunch, sunset snacks, dinner, and late-night drinks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer fresh seafood daily at Tigri Beach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, 100%. We source all our seafood — including lobster, lagoon crabs, jumbo tiger prawns, calamari, and reef fish — every single morning directly from local Hikkaduwa fishermen at the harbour. Nothing is frozen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Tigri Beach have vegetarian, vegan, or gluten-free options?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Along with our seafood focus, we prepare traditional Sri Lankan vegetarian curries (dhal, beetroot, jackfruit curries), fresh tropical fruit salads, and customised dishes. Gluten-free options are available. Please inform your server of any dietary requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there parking available near Tigri Beach Restaurant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, free roadside parking is available on Galle Road directly outside the restaurant. We also have beach-level bicycle and scooter parking space."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book a beach table for sunset at Tigri Beach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sunset tables are highly sought after (sunset is typically between 06:00 PM and 06:30 PM). Book via WhatsApp at +94 77 104 8202 or call us directly. Reservations are recommended, especially for beachfront sunset tables."
+            }
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Where is Tigri Beach Restaurant located in Hikkaduwa?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tigri Beach Restaurant is located at 348 Galle Road, Hikkaduwa, Southern Province, Sri Lanka (GPS: 6.138402, 80.097011). We are situated directly on the Hikkaduwa beachfront, opposite the Galle Road main entrance. Steps from Hikkaduwa Coral Reef (2 min), Turtle Beach (3 min), and the main surf break (5 min)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are Tigri Beach Restaurant's opening hours?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We are open daily from 09:30 AM to 11:00 PM (Sri Lanka Time, GMT+5:30), seven days a week including public holidays. We serve breakfast, lunch, sunset snacks, dinner, and late-night drinks."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer fresh seafood daily at Tigri Beach?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, 100%. We source all our seafood — including lobster, lagoon crabs, jumbo tiger prawns, calamari, and reef fish — every single morning directly from local Hikkaduwa fishermen at the harbour. Nothing is frozen."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Tigri Beach have vegetarian, vegan, or gluten-free options?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Along with our seafood focus, we prepare traditional Sri Lankan vegetarian curries (dhal, beetroot, jackfruit curries), fresh tropical fruit salads, and customised dishes. Gluten-free options are available. Please inform your server of any dietary requirements."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there parking available near Tigri Beach Restaurant?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, free roadside parking is available on Galle Road directly outside the restaurant. We also have beach-level bicycle and scooter parking space."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I book a beach table for sunset at Tigri Beach?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sunset tables are highly sought after (sunset is typically between 06:00 PM and 06:30 PM). Book via WhatsApp at +94 77 104 8202 or call us directly. Reservations are recommended, especially for beachfront sunset tables."
-          }
-        }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "@id": "https://tigribeach.com/#website",
-      "url": "https://tigribeach.com",
-      "name": "Tigri Beach Restaurant",
-      "description": "Official website of Tigri Beach Restaurant — Hikkaduwa's premier beachfront seafood dining destination.",
-      "publisher": {
-        "@id": "https://tigribeach.com/#restaurant"
-      },
-      "inLanguage": "en-US",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://tigribeach.com/?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
+        ]
       }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://tigribeach.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Menu",
-          "item": "https://tigribeach.com/#menu"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Contact & Reservations",
-          "item": "https://tigribeach.com/#contact"
-        }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@id": "https://tigribeach.com/#webpage",
-      "url": "https://tigribeach.com",
-      "name": "Tigri Beach Restaurant | Fresh Seafood & Sunset Vibe Hikkaduwa",
-      "isPartOf": { "@id": "https://tigribeach.com/#website" },
-      "about": { "@id": "https://tigribeach.com/#restaurant" },
-      "description": "Tigri Beach Restaurant is Hikkaduwa's premier beachfront seafood destination. Daily-caught lobster, lagoon crab, tiger prawns. Open daily 09:30 AM – 11:00 PM at 348 Galle Road, Hikkaduwa, Sri Lanka.",
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": ["#about", "#contact", ".quick-facts"]
-      },
-      "inLanguage": "en-US",
-      "datePublished": "2026-06-27",
-      "dateModified": "2026-06-27",
-      "potentialAction": {
-        "@type": "ReserveAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://wa.me/94771048202?text=Hi%20Tigri%20Beach!%20I'd%20like%20to%20reserve%20a%20table",
-          "actionPlatform": [
-            "http://schema.org/DesktopWebPlatform",
-            "http://schema.org/MobileWebPlatform"
-          ]
-        },
-        "result": {
-          "@type": "Reservation",
-          "name": "Table Reservation at Tigri Beach Restaurant"
-        }
-      }
-    }
-  ];
+    ]
+  };
 
   return (
     <html
@@ -418,7 +477,7 @@ export default function RootLayout({ children }) {
         <script
           id="structured-data"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArray) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
