@@ -325,21 +325,66 @@ export default function RootLayout({ children }) {
           },
           {
             "@type": "Review",
-            "@id": "https://tigribeach.com/#review-michael-vanderberg",
+            "@id": "https://tigribeach.com/#review-erky-b",
             "itemReviewed": { "@id": "https://tigribeach.com/#restaurant" },
-            "author": { "@type": "Person", "name": "Michael Van Der Berg" },
+            "author": { "@type": "Person", "name": "Erky B" },
             "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "datePublished": "2026-06-01",
-            "reviewBody": "The traditional Sri Lankan crab curry here is a masterpiece. Bursting with authentic spices and cooked to perfection. Make sure to book a front beach table for the sunset views!"
+            "datePublished": "2024-12-15",
+            "reviewBody": "Superb seafood at a fraction of the price. The mixed seafood grill was outstanding, the friendly host made us feel welcome, and the unobstructed beachfront views made sunset dinner unforgettable."
           },
           {
             "@type": "Review",
-            "@id": "https://tigribeach.com/#review-emma-watson",
+            "@id": "https://tigribeach.com/#review-ruwan-bandara",
             "itemReviewed": { "@id": "https://tigribeach.com/#restaurant" },
-            "author": { "@type": "Person", "name": "Emma Watson" },
+            "author": { "@type": "Person", "name": "Ruwan Bandara" },
             "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "datePublished": "2026-06-26",
-            "reviewBody": "An absolute must-visit in Hikkaduwa! The cocktails are superb, especially the Arrack Sour. Outstanding service and feet-in-the-sand dining."
+            "datePublished": "2026-06-10",
+            "reviewBody": "Cozy beachfront gem. Friendly, attentive staff who let us choose our catch. The butter-rosemary snapper was incredibly tender. Very reasonable pricing for the quality."
+          },
+          {
+            "@type": "Review",
+            "@id": "https://tigribeach.com/#review-forster",
+            "itemReviewed": { "@id": "https://tigribeach.com/#restaurant" },
+            "author": { "@type": "Person", "name": "Forster" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "datePublished": "2022-04-15",
+            "reviewBody": "Among the best seafood I've had anywhere, not just Sri Lanka. The seafood platter with lobster, prawns, crab, and squid in a Thai-style lime sauce was exceptional, complemented by friendly service and great music."
+          },
+          {
+            "@type": "Review",
+            "@id": "https://tigribeach.com/#review-david-miller",
+            "itemReviewed": { "@id": "https://tigribeach.com/#restaurant" },
+            "author": { "@type": "Person", "name": "David Miller" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "datePublished": "2026-06-24",
+            "reviewBody": "Incredible food and atmosphere. The staff are so welcoming and the fish is caught daily. Sitting by the waves with a cold beer and fresh seafood is pure heaven. Highly recommend!"
+          },
+          {
+            "@type": "Review",
+            "@id": "https://tigribeach.com/#review-prdh1968",
+            "itemReviewed": { "@id": "https://tigribeach.com/#restaurant" },
+            "author": { "@type": "Person", "name": "Prdh1968" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "datePublished": "2022-03-15",
+            "reviewBody": "Amazing fresh seafood, stunning sea views, and excellent service. Owner Nishan was incredibly helpful, and the food was some of the best we enjoyed in Sri Lanka at very reasonable prices."
+          },
+          {
+            "@type": "Review",
+            "@id": "https://tigribeach.com/#review-harrys",
+            "itemReviewed": { "@id": "https://tigribeach.com/#restaurant" },
+            "author": { "@type": "Person", "name": "Harry S" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "datePublished": "2023-08-15",
+            "reviewBody": "A hidden gem with fantastic seafood. The platter featuring fish, crab, and prawns was beautifully cooked, the vegetables were perfectly seasoned, and the staff made great recommendations."
+          },
+          {
+            "@type": "Review",
+            "@id": "https://tigribeach.com/#review-veronicac",
+            "itemReviewed": { "@id": "https://tigribeach.com/#restaurant" },
+            "author": { "@type": "Person", "name": "Veronica C" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "datePublished": "2024-11-15",
+            "reviewBody": "A romantic seaside dinner with delicious fresh fish, kind and attentive service, and a welcoming family-run atmosphere. Excellent value for money and highly recommended for couples and families alike."
           }
         ],
         "potentialAction": {
